@@ -1,0 +1,38 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.27130.2036
+MinimumVisualStudioVersion = 10.0.40219.1
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{ACE91F5C-9087-4D32-BC2E-73A923B8171F}"
+EndProject
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "test", "test", "{9E48332A-1E9D-4A70-BC42-BA6E575CA825}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReadKubeLogs.Service", "src\ReadKubeLogs.Service\ReadKubeLogs.Service.csproj", "{B5BF19EF-22FB-40AB-A3B2-4E83EE776A36}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KubernetesClient", "lib\KubernetesClient.csproj", "{48A75480-2438-43E5-857C-722EBB15901D}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{B5BF19EF-22FB-40AB-A3B2-4E83EE776A36}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{B5BF19EF-22FB-40AB-A3B2-4E83EE776A36}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{B5BF19EF-22FB-40AB-A3B2-4E83EE776A36}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{B5BF19EF-22FB-40AB-A3B2-4E83EE776A36}.Release|Any CPU.Build.0 = Release|Any CPU
+		{48A75480-2438-43E5-857C-722EBB15901D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{48A75480-2438-43E5-857C-722EBB15901D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{48A75480-2438-43E5-857C-722EBB15901D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{48A75480-2438-43E5-857C-722EBB15901D}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+	GlobalSection(NestedProjects) = preSolution
+		{B5BF19EF-22FB-40AB-A3B2-4E83EE776A36} = {ACE91F5C-9087-4D32-BC2E-73A923B8171F}
+	EndGlobalSection
+	GlobalSection(ExtensibilityGlobals) = postSolution
+		SolutionGuid = {117A5BCB-57A1-49A5-BBBB-2E2B4E7AA22B}
+	EndGlobalSection
+EndGlobal
