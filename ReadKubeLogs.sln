@@ -11,6 +11,8 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ReadKubeLogs.Service", "src
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "KubernetesClient", "lib\KubernetesClient.csproj", "{48A75480-2438-43E5-857C-722EBB15901D}"
 EndProject
+Project("{E53339B2-1760-4266-BCC7-CA923CBCF16C}") = "docker-compose", "docker-compose.dcproj", "{DD33C359-5C16-4FC8-AC9A-47715C1FA353}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
@@ -25,6 +27,10 @@ Global
 		{48A75480-2438-43E5-857C-722EBB15901D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{48A75480-2438-43E5-857C-722EBB15901D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{48A75480-2438-43E5-857C-722EBB15901D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{DD33C359-5C16-4FC8-AC9A-47715C1FA353}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{DD33C359-5C16-4FC8-AC9A-47715C1FA353}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{DD33C359-5C16-4FC8-AC9A-47715C1FA353}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{DD33C359-5C16-4FC8-AC9A-47715C1FA353}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

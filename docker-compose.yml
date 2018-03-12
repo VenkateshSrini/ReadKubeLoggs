@@ -1,0 +1,10 @@
+version: '3'
+
+services:
+  readkubelogs.service:
+    image: readkubelogs.service
+    build:
+      context: .
+      dockerfile: src/ReadKubeLogs.Service/Dockerfile
+    ports:
+      - 5000:80
