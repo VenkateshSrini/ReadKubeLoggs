@@ -1,0 +1,9 @@
+version: '3'
+
+services:
+  readkubelogs_new :
+    image: venkateshsrini3/readkubelogs
+    ports:
+      - 80:80
+    labels:
+      kompose.service.type: LoadBalancer
