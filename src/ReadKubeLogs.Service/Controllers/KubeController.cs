@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using Microsoft.AspNetCore.Mvc;
 using k8s;
 using k8s.Models;
+using System.Text;
 
 namespace ReadKubeLogs.Service.Controllers
 {
@@ -39,16 +40,34 @@ namespace ReadKubeLogs.Service.Controllers
             return Json(content);
         }
         [HttpGet("ServiceLog/{serviceName}/{namespaceName}")]
-        
-        public  IActionResult GetServiceLog(string serviceName, string namespaceName)
+        public  async Task<IActionResult> GetServiceLog(string serviceName, string namespaceName)
         {
             V1Service services = kubeClient.ReadNamespacedService(serviceName, namespaceName);
             var serviceLabels = services.Metadata.Labels;
-            var pods = kubeClient.ListNamespacedPod(namespaceName);
-            //Iterare, take labels and check if service entry matches
-
-            //podList.Items.Where(pd=>pd.Spec.NodeSelector.Where(keyval=>(keyval.Key== "io.kompose.service") &&("")))
-            return Json(services);
+            StringBuilder labelQueryBuilder = new StringBuilder();
+            foreach(KeyValuePair<string,string>dictEntry in serviceLabels)
+            {
+                if (labelQueryBuilder.Length > 0)
+                    labelQueryBuilder.Append(",");
+                labelQueryBuilder.Append(dictEntry.Key);
+                labelQueryBuilder.Append("=");
+                labelQueryBuilder.Append(dictEntry.Value);
+            }
+            var pods = kubeClient.ListNamespacedPod(namespaceName, labelSelector: labelQueryBuilder.ToString());
+            List<string> logAppendage = new List<string>();
+            
+            foreach(var pod in pods.Items)
+            {
+                using (var stream = await kubeClient.ReadNamespacedPodLogAsync(pod.Metadata.Name, namespaceName))
+                {
+                    using (StreamReader reader = new StreamReader(stream))
+                    {
+                        logAppendage.Add(await reader.ReadToEndAsync());
+                    }
+                    stream.Flush();
+                }
+            }
+            return Json(logAppendage);
         }
     }
 }
