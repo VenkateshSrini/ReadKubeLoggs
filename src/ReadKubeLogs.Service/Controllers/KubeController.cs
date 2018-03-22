@@ -38,11 +38,13 @@ namespace ReadKubeLogs.Service.Controllers
             }
             return Json(content);
         }
-        [HttpGet("{serviceName}/{namespaceName}")]
+        [HttpGet("ServiceLog/{serviceName}/{namespaceName}")]
+        
         public  IActionResult GetServiceLog(string serviceName, string namespaceName)
         {
             V1Service services = kubeClient.ReadNamespacedService(serviceName, namespaceName);
-
+            var podList = kubeClient.ListNamespacedPod(namespaceName);
+            //podList.Items.Where(pd=>pd.Spec.NodeSelector.Where(keyval=>(keyval.Key== "io.kompose.service") &&("")))
             return Json(services);
         }
     }

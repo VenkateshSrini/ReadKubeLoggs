@@ -1,0 +1,3371 @@
+{
+    "apiVersion": "v1",
+    "items": [
+        {
+            "apiVersion": null,
+            "kind": null,
+            "metadata": {
+                "annotations": {
+                    "kubernetes.io/created-by": "{\"kind\":\"SerializedReference\",\"apiVersion\":\"v1\",\"reference\":{\"kind\":\"ReplicaSet\",\"namespace\":\"default\",\"name\":\"adpterapi-6c7976cf85\",\"uid\":\"a52f9fd8-165f-11e8-85de-0a58ac1f1ce4\",\"apiVersion\":\"extensions\",\"resourceVersion\":\"342009\"}}\n"
+                },
+                "clusterName": null,
+                "creationTimestamp": "2018-02-20T17:01:08Z",
+                "deletionGracePeriodSeconds": null,
+                "deletionTimestamp": null,
+                "finalizers": null,
+                "generateName": "adpterapi-6c7976cf85-",
+                "generation": null,
+                "initializers": null,
+                "labels": {
+                    "io.kompose.service": "adpterapi",
+                    "pod-template-hash": "2735327941"
+                },
+                "name": "adpterapi-6c7976cf85-6dcrh",
+                "namespace": "default",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "extensions/v1beta1",
+                        "blockOwnerDeletion": true,
+                        "controller": true,
+                        "kind": "ReplicaSet",
+                        "name": "adpterapi-6c7976cf85",
+                        "uid": "a52f9fd8-165f-11e8-85de-0a58ac1f1ce4"
+                    }
+                ],
+                "resourceVersion": "1347970",
+                "selfLink": "/api/v1/namespaces/default/pods/adpterapi-6c7976cf85-6dcrh",
+                "uid": "a53177bf-165f-11e8-85de-0a58ac1f1ce4"
+            },
+            "spec": {
+                "activeDeadlineSeconds": null,
+                "affinity": null,
+                "automountServiceAccountToken": null,
+                "containers": [
+                    {
+                        "args": null,
+                        "command": null,
+                        "env": null,
+                        "envFrom": null,
+                        "image": "venkateshsrini3/adpterapi",
+                        "imagePullPolicy": "Always",
+                        "lifecycle": null,
+                        "livenessProbe": null,
+                        "name": "adpterapi",
+                        "ports": [
+                            {
+                                "containerPort": 80,
+                                "hostIP": null,
+                                "hostPort": null,
+                                "name": null,
+                                "protocol": "TCP"
+                            }
+                        ],
+                        "readinessProbe": null,
+                        "resources": {
+                            "limits": null,
+                            "requests": null
+                        },
+                        "securityContext": null,
+                        "stdin": null,
+                        "stdinOnce": null,
+                        "terminationMessagePath": "/dev/termination-log",
+                        "terminationMessagePolicy": "File",
+                        "tty": null,
+                        "volumeDevices": null,
+                        "volumeMounts": [
+                            {
+                                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                                "mountPropagation": null,
+                                "name": "default-token-9s5zd",
+                                "readOnly": true,
+                                "subPath": null
+                            }
+                        ],
+                        "workingDir": null
+                    }
+                ],
+                "dnsConfig": null,
+                "dnsPolicy": "ClusterFirst",
+                "hostAliases": null,
+                "hostIPC": null,
+                "hostNetwork": null,
+                "hostPID": null,
+                "hostname": null,
+                "imagePullSecrets": null,
+                "initContainers": null,
+                "nodeName": "aks-nodepool1-32852803-0",
+                "nodeSelector": null,
+                "priority": null,
+                "priorityClassName": null,
+                "restartPolicy": "Always",
+                "schedulerName": "default-scheduler",
+                "securityContext": {
+                    "fsGroup": null,
+                    "runAsNonRoot": null,
+                    "runAsUser": null,
+                    "seLinuxOptions": null,
+                    "supplementalGroups": null
+                },
+                "serviceAccount": "default",
+                "serviceAccountName": "default",
+                "subdomain": null,
+                "terminationGracePeriodSeconds": 30,
+                "tolerations": [
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.alpha.kubernetes.io/notReady",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300,
+                        "value": null
+                    },
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.alpha.kubernetes.io/unreachable",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300,
+                        "value": null
+                    }
+                ],
+                "volumes": [
+                    {
+                        "awsElasticBlockStore": null,
+                        "azureDisk": null,
+                        "azureFile": null,
+                        "cephfs": null,
+                        "cinder": null,
+                        "configMap": null,
+                        "downwardAPI": null,
+                        "emptyDir": null,
+                        "fc": null,
+                        "flexVolume": null,
+                        "flocker": null,
+                        "gcePersistentDisk": null,
+                        "gitRepo": null,
+                        "glusterfs": null,
+                        "hostPath": null,
+                        "iscsi": null,
+                        "name": "default-token-9s5zd",
+                        "nfs": null,
+                        "persistentVolumeClaim": null,
+                        "photonPersistentDisk": null,
+                        "portworxVolume": null,
+                        "projected": null,
+                        "quobyte": null,
+                        "rbd": null,
+                        "scaleIO": null,
+                        "secret": {
+                            "defaultMode": 420,
+                            "items": null,
+                            "optional": null,
+                            "secretName": "default-token-9s5zd"
+                        },
+                        "storageos": null,
+                        "vsphereVolume": null
+                    }
+                ]
+            },
+            "status": {
+                "conditions": [
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-20T17:01:08Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "Initialized"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-20T17:01:11Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "Ready"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-20T17:01:08Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "PodScheduled"
+                    }
+                ],
+                "containerStatuses": [
+                    {
+                        "containerID": "docker://67cdfd678ee4af5c524206ce2a97506fd8a4447a1cfbf16db4cc45605008ed09",
+                        "image": "venkateshsrini3/adpterapi:latest",
+                        "imageID": "docker-pullable://venkateshsrini3/adpterapi@sha256:df117d3c82bfdd846420ff726e56ca796b817c125d81a8c88ef69fc581d59d64",
+                        "lastState": {
+                            "running": null,
+                            "terminated": null,
+                            "waiting": null
+                        },
+                        "name": "adpterapi",
+                        "ready": true,
+                        "restartCount": 0,
+                        "state": {
+                            "running": {
+                                "startedAt": "2018-02-20T17:01:10Z"
+                            },
+                            "terminated": null,
+                            "waiting": null
+                        }
+                    }
+                ],
+                "hostIP": "10.240.0.4",
+                "initContainerStatuses": null,
+                "message": null,
+                "phase": "Running",
+                "podIP": "10.244.0.40",
+                "qosClass": "BestEffort",
+                "reason": null,
+                "startTime": "2018-02-20T17:01:08Z"
+            }
+        },
+        {
+            "apiVersion": null,
+            "kind": null,
+            "metadata": {
+                "annotations": {
+                    "checksum/alertmanager-config": "696512ecaafb7b2be2fccba7ec05781212faefd7b636e661c59c86a25dbd515d",
+                    "kubernetes.io/created-by": "{\"kind\":\"SerializedReference\",\"apiVersion\":\"v1\",\"reference\":{\"kind\":\"ReplicaSet\",\"namespace\":\"default\",\"name\":\"alertmanager-5fb4c68c5c\",\"uid\":\"32970518-13ab-11e8-85de-0a58ac1f1ce4\",\"apiVersion\":\"extensions\",\"resourceVersion\":\"2145\"}}\n"
+                },
+                "clusterName": null,
+                "creationTimestamp": "2018-02-17T06:24:24Z",
+                "deletionGracePeriodSeconds": null,
+                "deletionTimestamp": null,
+                "finalizers": null,
+                "generateName": "alertmanager-5fb4c68c5c-",
+                "generation": null,
+                "initializers": null,
+                "labels": {
+                    "app": "alertmanager",
+                    "pod-template-hash": "1960724717"
+                },
+                "name": "alertmanager-5fb4c68c5c-kgdgd",
+                "namespace": "default",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "extensions/v1beta1",
+                        "blockOwnerDeletion": true,
+                        "controller": true,
+                        "kind": "ReplicaSet",
+                        "name": "alertmanager-5fb4c68c5c",
+                        "uid": "32970518-13ab-11e8-85de-0a58ac1f1ce4"
+                    }
+                ],
+                "resourceVersion": "1347956",
+                "selfLink": "/api/v1/namespaces/default/pods/alertmanager-5fb4c68c5c-kgdgd",
+                "uid": "3299f431-13ab-11e8-85de-0a58ac1f1ce4"
+            },
+            "spec": {
+                "activeDeadlineSeconds": null,
+                "affinity": null,
+                "automountServiceAccountToken": null,
+                "containers": [
+                    {
+                        "args": null,
+                        "command": [
+                            "/bin/alertmanager",
+                            "-config.file=/alertmanager.yml",
+                            "-storage.path=/alertmanager"
+                        ],
+                        "env": null,
+                        "envFrom": null,
+                        "image": "prom/alertmanager:v0.7.1",
+                        "imagePullPolicy": "Always",
+                        "lifecycle": null,
+                        "livenessProbe": null,
+                        "name": "alertmanager",
+                        "ports": [
+                            {
+                                "containerPort": 9003,
+                                "hostIP": null,
+                                "hostPort": null,
+                                "name": null,
+                                "protocol": "TCP"
+                            }
+                        ],
+                        "readinessProbe": null,
+                        "resources": {
+                            "limits": null,
+                            "requests": null
+                        },
+                        "securityContext": null,
+                        "stdin": null,
+                        "stdinOnce": null,
+                        "terminationMessagePath": "/dev/termination-log",
+                        "terminationMessagePolicy": "File",
+                        "tty": null,
+                        "volumeDevices": null,
+                        "volumeMounts": [
+                            {
+                                "mountPath": "/alertmanager.yml",
+                                "mountPropagation": null,
+                                "name": "alertmanager-config",
+                                "readOnly": null,
+                                "subPath": "alertmanager.yml"
+                            },
+                            {
+                                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                                "mountPropagation": null,
+                                "name": "default-token-9s5zd",
+                                "readOnly": true,
+                                "subPath": null
+                            }
+                        ],
+                        "workingDir": null
+                    }
+                ],
+                "dnsConfig": null,
+                "dnsPolicy": "ClusterFirst",
+                "hostAliases": null,
+                "hostIPC": null,
+                "hostNetwork": null,
+                "hostPID": null,
+                "hostname": null,
+                "imagePullSecrets": null,
+                "initContainers": null,
+                "nodeName": "aks-nodepool1-32852803-0",
+                "nodeSelector": null,
+                "priority": null,
+                "priorityClassName": null,
+                "restartPolicy": "Always",
+                "schedulerName": "default-scheduler",
+                "securityContext": {
+                    "fsGroup": null,
+                    "runAsNonRoot": null,
+                    "runAsUser": null,
+                    "seLinuxOptions": null,
+                    "supplementalGroups": null
+                },
+                "serviceAccount": "default",
+                "serviceAccountName": "default",
+                "subdomain": null,
+                "terminationGracePeriodSeconds": 30,
+                "tolerations": [
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.alpha.kubernetes.io/notReady",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300,
+                        "value": null
+                    },
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.alpha.kubernetes.io/unreachable",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300,
+                        "value": null
+                    }
+                ],
+                "volumes": [
+                    {
+                        "awsElasticBlockStore": null,
+                        "azureDisk": null,
+                        "azureFile": null,
+                        "cephfs": null,
+                        "cinder": null,
+                        "configMap": {
+                            "defaultMode": 420,
+                            "items": [
+                                {
+                                    "key": "alertmanager.yml",
+                                    "mode": 420,
+                                    "path": "alertmanager.yml"
+                                }
+                            ],
+                            "name": "alertmanager-config",
+                            "optional": null
+                        },
+                        "downwardAPI": null,
+                        "emptyDir": null,
+                        "fc": null,
+                        "flexVolume": null,
+                        "flocker": null,
+                        "gcePersistentDisk": null,
+                        "gitRepo": null,
+                        "glusterfs": null,
+                        "hostPath": null,
+                        "iscsi": null,
+                        "name": "alertmanager-config",
+                        "nfs": null,
+                        "persistentVolumeClaim": null,
+                        "photonPersistentDisk": null,
+                        "portworxVolume": null,
+                        "projected": null,
+                        "quobyte": null,
+                        "rbd": null,
+                        "scaleIO": null,
+                        "secret": null,
+                        "storageos": null,
+                        "vsphereVolume": null
+                    },
+                    {
+                        "awsElasticBlockStore": null,
+                        "azureDisk": null,
+                        "azureFile": null,
+                        "cephfs": null,
+                        "cinder": null,
+                        "configMap": null,
+                        "downwardAPI": null,
+                        "emptyDir": null,
+                        "fc": null,
+                        "flexVolume": null,
+                        "flocker": null,
+                        "gcePersistentDisk": null,
+                        "gitRepo": null,
+                        "glusterfs": null,
+                        "hostPath": null,
+                        "iscsi": null,
+                        "name": "default-token-9s5zd",
+                        "nfs": null,
+                        "persistentVolumeClaim": null,
+                        "photonPersistentDisk": null,
+                        "portworxVolume": null,
+                        "projected": null,
+                        "quobyte": null,
+                        "rbd": null,
+                        "scaleIO": null,
+                        "secret": {
+                            "defaultMode": 420,
+                            "items": null,
+                            "optional": null,
+                            "secretName": "default-token-9s5zd"
+                        },
+                        "storageos": null,
+                        "vsphereVolume": null
+                    }
+                ]
+            },
+            "status": {
+                "conditions": [
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-17T06:24:24Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "Initialized"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-17T06:24:33Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "Ready"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-17T06:24:24Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "PodScheduled"
+                    }
+                ],
+                "containerStatuses": [
+                    {
+                        "containerID": "docker://d35d16d62768923831f1f14d7ab0b228311262616741ed76e32d8fdd8b30751f",
+                        "image": "prom/alertmanager:v0.7.1",
+                        "imageID": "docker-pullable://prom/alertmanager@sha256:e4d68bf1323d63a9a964f04f37ee2cb21ce3d2da1794d24d4528658e5f792a20",
+                        "lastState": {
+                            "running": null,
+                            "terminated": null,
+                            "waiting": null
+                        },
+                        "name": "alertmanager",
+                        "ready": true,
+                        "restartCount": 0,
+                        "state": {
+                            "running": {
+                                "startedAt": "2018-02-17T06:24:33Z"
+                            },
+                            "terminated": null,
+                            "waiting": null
+                        }
+                    }
+                ],
+                "hostIP": "10.240.0.4",
+                "initContainerStatuses": null,
+                "message": null,
+                "phase": "Running",
+                "podIP": "10.244.0.16",
+                "qosClass": "BestEffort",
+                "reason": null,
+                "startTime": "2018-02-17T06:24:24Z"
+            }
+        },
+        {
+            "apiVersion": null,
+            "kind": null,
+            "metadata": {
+                "annotations": {
+                    "kubernetes.io/created-by": "{\"kind\":\"SerializedReference\",\"apiVersion\":\"v1\",\"reference\":{\"kind\":\"ReplicaSet\",\"namespace\":\"default\",\"name\":\"faas-netesd-fff6b65d4\",\"uid\":\"32983851-13ab-11e8-85de-0a58ac1f1ce4\",\"apiVersion\":\"extensions\",\"resourceVersion\":\"2149\"}}\n"
+                },
+                "clusterName": null,
+                "creationTimestamp": "2018-02-17T06:24:24Z",
+                "deletionGracePeriodSeconds": null,
+                "deletionTimestamp": null,
+                "finalizers": null,
+                "generateName": "faas-netesd-fff6b65d4-",
+                "generation": null,
+                "initializers": null,
+                "labels": {
+                    "app": "faas-netesd",
+                    "pod-template-hash": "999262180"
+                },
+                "name": "faas-netesd-fff6b65d4-48fkc",
+                "namespace": "default",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "extensions/v1beta1",
+                        "blockOwnerDeletion": true,
+                        "controller": true,
+                        "kind": "ReplicaSet",
+                        "name": "faas-netesd-fff6b65d4",
+                        "uid": "32983851-13ab-11e8-85de-0a58ac1f1ce4"
+                    }
+                ],
+                "resourceVersion": "1347940",
+                "selfLink": "/api/v1/namespaces/default/pods/faas-netesd-fff6b65d4-48fkc",
+                "uid": "329a1573-13ab-11e8-85de-0a58ac1f1ce4"
+            },
+            "spec": {
+                "activeDeadlineSeconds": null,
+                "affinity": null,
+                "automountServiceAccountToken": null,
+                "containers": [
+                    {
+                        "args": null,
+                        "command": null,
+                        "env": [
+                            {
+                                "name": "function_namespace",
+                                "value": "default",
+                                "valueFrom": null
+                            },
+                            {
+                                "name": "read_timeout",
+                                "value": "20",
+                                "valueFrom": null
+                            },
+                            {
+                                "name": "write_timeout",
+                                "value": "20",
+                                "valueFrom": null
+                            }
+                        ],
+                        "envFrom": null,
+                        "image": "functions/faas-netesd:0.4.2",
+                        "imagePullPolicy": "Always",
+                        "lifecycle": null,
+                        "livenessProbe": null,
+                        "name": "faas-netesd",
+                        "ports": [
+                            {
+                                "containerPort": 8080,
+                                "hostIP": null,
+                                "hostPort": null,
+                                "name": null,
+                                "protocol": "TCP"
+                            }
+                        ],
+                        "readinessProbe": null,
+                        "resources": {
+                            "limits": null,
+                            "requests": null
+                        },
+                        "securityContext": null,
+                        "stdin": null,
+                        "stdinOnce": null,
+                        "terminationMessagePath": "/dev/termination-log",
+                        "terminationMessagePolicy": "File",
+                        "tty": null,
+                        "volumeDevices": null,
+                        "volumeMounts": [
+                            {
+                                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                                "mountPropagation": null,
+                                "name": "faas-controller-token-rl9hj",
+                                "readOnly": true,
+                                "subPath": null
+                            }
+                        ],
+                        "workingDir": null
+                    }
+                ],
+                "dnsConfig": null,
+                "dnsPolicy": "ClusterFirst",
+                "hostAliases": null,
+                "hostIPC": null,
+                "hostNetwork": null,
+                "hostPID": null,
+                "hostname": null,
+                "imagePullSecrets": null,
+                "initContainers": null,
+                "nodeName": "aks-nodepool1-32852803-0",
+                "nodeSelector": null,
+                "priority": null,
+                "priorityClassName": null,
+                "restartPolicy": "Always",
+                "schedulerName": "default-scheduler",
+                "securityContext": {
+                    "fsGroup": null,
+                    "runAsNonRoot": null,
+                    "runAsUser": null,
+                    "seLinuxOptions": null,
+                    "supplementalGroups": null
+                },
+                "serviceAccount": "faas-controller",
+                "serviceAccountName": "faas-controller",
+                "subdomain": null,
+                "terminationGracePeriodSeconds": 30,
+                "tolerations": [
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.alpha.kubernetes.io/notReady",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300,
+                        "value": null
+                    },
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.alpha.kubernetes.io/unreachable",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300,
+                        "value": null
+                    }
+                ],
+                "volumes": [
+                    {
+                        "awsElasticBlockStore": null,
+                        "azureDisk": null,
+                        "azureFile": null,
+                        "cephfs": null,
+                        "cinder": null,
+                        "configMap": null,
+                        "downwardAPI": null,
+                        "emptyDir": null,
+                        "fc": null,
+                        "flexVolume": null,
+                        "flocker": null,
+                        "gcePersistentDisk": null,
+                        "gitRepo": null,
+                        "glusterfs": null,
+                        "hostPath": null,
+                        "iscsi": null,
+                        "name": "faas-controller-token-rl9hj",
+                        "nfs": null,
+                        "persistentVolumeClaim": null,
+                        "photonPersistentDisk": null,
+                        "portworxVolume": null,
+                        "projected": null,
+                        "quobyte": null,
+                        "rbd": null,
+                        "scaleIO": null,
+                        "secret": {
+                            "defaultMode": 420,
+                            "items": null,
+                            "optional": null,
+                            "secretName": "faas-controller-token-rl9hj"
+                        },
+                        "storageos": null,
+                        "vsphereVolume": null
+                    }
+                ]
+            },
+            "status": {
+                "conditions": [
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-17T06:24:24Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "Initialized"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-17T06:24:32Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "Ready"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-17T06:24:24Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "PodScheduled"
+                    }
+                ],
+                "containerStatuses": [
+                    {
+                        "containerID": "docker://0b62b55ef0d30278e498bcae74951c7d5d6f9ba520366a5c2816ce80f7b38f15",
+                        "image": "functions/faas-netesd:0.4.2",
+                        "imageID": "docker-pullable://functions/faas-netesd@sha256:20cf7a16d8e8f9df71133dcc1cd79894c44182546a232c659289d72cdddce951",
+                        "lastState": {
+                            "running": null,
+                            "terminated": null,
+                            "waiting": null
+                        },
+                        "name": "faas-netesd",
+                        "ready": true,
+                        "restartCount": 0,
+                        "state": {
+                            "running": {
+                                "startedAt": "2018-02-17T06:24:32Z"
+                            },
+                            "terminated": null,
+                            "waiting": null
+                        }
+                    }
+                ],
+                "hostIP": "10.240.0.4",
+                "initContainerStatuses": null,
+                "message": null,
+                "phase": "Running",
+                "podIP": "10.244.0.14",
+                "qosClass": "BestEffort",
+                "reason": null,
+                "startTime": "2018-02-17T06:24:24Z"
+            }
+        },
+        {
+            "apiVersion": null,
+            "kind": null,
+            "metadata": {
+                "annotations": {
+                    "kubernetes.io/created-by": "{\"kind\":\"SerializedReference\",\"apiVersion\":\"v1\",\"reference\":{\"kind\":\"ReplicaSet\",\"namespace\":\"default\",\"name\":\"gateway-5447687c57\",\"uid\":\"329a38bb-13ab-11e8-85de-0a58ac1f1ce4\",\"apiVersion\":\"extensions\",\"resourceVersion\":\"2155\"}}\n"
+                },
+                "clusterName": null,
+                "creationTimestamp": "2018-02-17T06:24:24Z",
+                "deletionGracePeriodSeconds": null,
+                "deletionTimestamp": null,
+                "finalizers": null,
+                "generateName": "gateway-5447687c57-",
+                "generation": null,
+                "initializers": null,
+                "labels": {
+                    "app": "gateway",
+                    "pod-template-hash": "1003243713"
+                },
+                "name": "gateway-5447687c57-spkgd",
+                "namespace": "default",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "extensions/v1beta1",
+                        "blockOwnerDeletion": true,
+                        "controller": true,
+                        "kind": "ReplicaSet",
+                        "name": "gateway-5447687c57",
+                        "uid": "329a38bb-13ab-11e8-85de-0a58ac1f1ce4"
+                    }
+                ],
+                "resourceVersion": "1348000",
+                "selfLink": "/api/v1/namespaces/default/pods/gateway-5447687c57-spkgd",
+                "uid": "329c1950-13ab-11e8-85de-0a58ac1f1ce4"
+            },
+            "spec": {
+                "activeDeadlineSeconds": null,
+                "affinity": null,
+                "automountServiceAccountToken": null,
+                "containers": [
+                    {
+                        "args": null,
+                        "command": null,
+                        "env": [
+                            {
+                                "name": "read_timeout",
+                                "value": "20",
+                                "valueFrom": null
+                            },
+                            {
+                                "name": "write_timeout",
+                                "value": "20",
+                                "valueFrom": null
+                            },
+                            {
+                                "name": "functions_provider_url",
+                                "value": "http://faas-netesd.default:8080/",
+                                "valueFrom": null
+                            },
+                            {
+                                "name": "faas_nats_address",
+                                "value": "nats.default",
+                                "valueFrom": null
+                            },
+                            {
+                                "name": "faas_nats_port",
+                                "value": "4222",
+                                "valueFrom": null
+                            }
+                        ],
+                        "envFrom": null,
+                        "image": "functions/gateway:0.7.0",
+                        "imagePullPolicy": "Always",
+                        "lifecycle": null,
+                        "livenessProbe": null,
+                        "name": "gateway",
+                        "ports": [
+                            {
+                                "containerPort": 8080,
+                                "hostIP": null,
+                                "hostPort": null,
+                                "name": null,
+                                "protocol": "TCP"
+                            }
+                        ],
+                        "readinessProbe": null,
+                        "resources": {
+                            "limits": null,
+                            "requests": null
+                        },
+                        "securityContext": null,
+                        "stdin": null,
+                        "stdinOnce": null,
+                        "terminationMessagePath": "/dev/termination-log",
+                        "terminationMessagePolicy": "File",
+                        "tty": null,
+                        "volumeDevices": null,
+                        "volumeMounts": [
+                            {
+                                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                                "mountPropagation": null,
+                                "name": "default-token-9s5zd",
+                                "readOnly": true,
+                                "subPath": null
+                            }
+                        ],
+                        "workingDir": null
+                    }
+                ],
+                "dnsConfig": null,
+                "dnsPolicy": "ClusterFirst",
+                "hostAliases": null,
+                "hostIPC": null,
+                "hostNetwork": null,
+                "hostPID": null,
+                "hostname": null,
+                "imagePullSecrets": null,
+                "initContainers": null,
+                "nodeName": "aks-nodepool1-32852803-0",
+                "nodeSelector": null,
+                "priority": null,
+                "priorityClassName": null,
+                "restartPolicy": "Always",
+                "schedulerName": "default-scheduler",
+                "securityContext": {
+                    "fsGroup": null,
+                    "runAsNonRoot": null,
+                    "runAsUser": null,
+                    "seLinuxOptions": null,
+                    "supplementalGroups": null
+                },
+                "serviceAccount": "default",
+                "serviceAccountName": "default",
+                "subdomain": null,
+                "terminationGracePeriodSeconds": 30,
+                "tolerations": [
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.alpha.kubernetes.io/notReady",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300,
+                        "value": null
+                    },
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.alpha.kubernetes.io/unreachable",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300,
+                        "value": null
+                    }
+                ],
+                "volumes": [
+                    {
+                        "awsElasticBlockStore": null,
+                        "azureDisk": null,
+                        "azureFile": null,
+                        "cephfs": null,
+                        "cinder": null,
+                        "configMap": null,
+                        "downwardAPI": null,
+                        "emptyDir": null,
+                        "fc": null,
+                        "flexVolume": null,
+                        "flocker": null,
+                        "gcePersistentDisk": null,
+                        "gitRepo": null,
+                        "glusterfs": null,
+                        "hostPath": null,
+                        "iscsi": null,
+                        "name": "default-token-9s5zd",
+                        "nfs": null,
+                        "persistentVolumeClaim": null,
+                        "photonPersistentDisk": null,
+                        "portworxVolume": null,
+                        "projected": null,
+                        "quobyte": null,
+                        "rbd": null,
+                        "scaleIO": null,
+                        "secret": {
+                            "defaultMode": 420,
+                            "items": null,
+                            "optional": null,
+                            "secretName": "default-token-9s5zd"
+                        },
+                        "storageos": null,
+                        "vsphereVolume": null
+                    }
+                ]
+            },
+            "status": {
+                "conditions": [
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-17T06:24:24Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "Initialized"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-17T06:24:36Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "Ready"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-17T06:24:24Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "PodScheduled"
+                    }
+                ],
+                "containerStatuses": [
+                    {
+                        "containerID": "docker://ec0d949651430510ffad9166cc474d0228759363581c1099cfef7ea1845e6820",
+                        "image": "functions/gateway:0.7.0",
+                        "imageID": "docker-pullable://functions/gateway@sha256:52b41d479d80654f06ff00616ac2aa4d177f324864a41a7cc4807df72ceddc84",
+                        "lastState": {
+                            "running": null,
+                            "terminated": {
+                                "containerID": "docker://f9fe636137adb923aa570ac13cf2a818b9046d61f8bad461fd08b57b11de363a",
+                                "exitCode": 1,
+                                "finishedAt": "2018-02-17T06:24:30Z",
+                                "message": null,
+                                "reason": "Error",
+                                "signal": null,
+                                "startedAt": "2018-02-17T06:24:28Z"
+                            },
+                            "waiting": null
+                        },
+                        "name": "gateway",
+                        "ready": true,
+                        "restartCount": 1,
+                        "state": {
+                            "running": {
+                                "startedAt": "2018-02-17T06:24:36Z"
+                            },
+                            "terminated": null,
+                            "waiting": null
+                        }
+                    }
+                ],
+                "hostIP": "10.240.0.4",
+                "initContainerStatuses": null,
+                "message": null,
+                "phase": "Running",
+                "podIP": "10.244.0.13",
+                "qosClass": "BestEffort",
+                "reason": null,
+                "startTime": "2018-02-17T06:24:24Z"
+            }
+        },
+        {
+            "apiVersion": null,
+            "kind": null,
+            "metadata": {
+                "annotations": {
+                    "kubernetes.io/created-by": "{\"kind\":\"SerializedReference\",\"apiVersion\":\"v1\",\"reference\":{\"kind\":\"ReplicaSet\",\"namespace\":\"default\",\"name\":\"kubernetes-bootcamp-54fbf9f945\",\"uid\":\"83962f53-18a1-11e8-85de-0a58ac1f1ce4\",\"apiVersion\":\"extensions\",\"resourceVersion\":\"625684\"}}\n"
+                },
+                "clusterName": null,
+                "creationTimestamp": "2018-02-23T13:57:41Z",
+                "deletionGracePeriodSeconds": null,
+                "deletionTimestamp": null,
+                "finalizers": null,
+                "generateName": "kubernetes-bootcamp-54fbf9f945-",
+                "generation": null,
+                "initializers": null,
+                "labels": {
+                    "pod-template-hash": "1096959501",
+                    "run": "kubernetes-bootcamp"
+                },
+                "name": "kubernetes-bootcamp-54fbf9f945-bvlbn",
+                "namespace": "default",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "extensions/v1beta1",
+                        "blockOwnerDeletion": true,
+                        "controller": true,
+                        "kind": "ReplicaSet",
+                        "name": "kubernetes-bootcamp-54fbf9f945",
+                        "uid": "83962f53-18a1-11e8-85de-0a58ac1f1ce4"
+                    }
+                ],
+                "resourceVersion": "1347975",
+                "selfLink": "/api/v1/namespaces/default/pods/kubernetes-bootcamp-54fbf9f945-bvlbn",
+                "uid": "83a23952-18a1-11e8-85de-0a58ac1f1ce4"
+            },
+            "spec": {
+                "activeDeadlineSeconds": null,
+                "affinity": null,
+                "automountServiceAccountToken": null,
+                "containers": [
+                    {
+                        "args": null,
+                        "command": null,
+                        "env": null,
+                        "envFrom": null,
+                        "image": "gcr.io/google-samples/kubernetes-bootcamp:v1",
+                        "imagePullPolicy": "IfNotPresent",
+                        "lifecycle": null,
+                        "livenessProbe": null,
+                        "name": "kubernetes-bootcamp",
+                        "ports": [
+                            {
+                                "containerPort": 8080,
+                                "hostIP": null,
+                                "hostPort": null,
+                                "name": null,
+                                "protocol": "TCP"
+                            }
+                        ],
+                        "readinessProbe": null,
+                        "resources": {
+                            "limits": null,
+                            "requests": null
+                        },
+                        "securityContext": null,
+                        "stdin": null,
+                        "stdinOnce": null,
+                        "terminationMessagePath": "/dev/termination-log",
+                        "terminationMessagePolicy": "File",
+                        "tty": null,
+                        "volumeDevices": null,
+                        "volumeMounts": [
+                            {
+                                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                                "mountPropagation": null,
+                                "name": "default-token-9s5zd",
+                                "readOnly": true,
+                                "subPath": null
+                            }
+                        ],
+                        "workingDir": null
+                    }
+                ],
+                "dnsConfig": null,
+                "dnsPolicy": "ClusterFirst",
+                "hostAliases": null,
+                "hostIPC": null,
+                "hostNetwork": null,
+                "hostPID": null,
+                "hostname": null,
+                "imagePullSecrets": null,
+                "initContainers": null,
+                "nodeName": "aks-nodepool1-32852803-0",
+                "nodeSelector": null,
+                "priority": null,
+                "priorityClassName": null,
+                "restartPolicy": "Always",
+                "schedulerName": "default-scheduler",
+                "securityContext": {
+                    "fsGroup": null,
+                    "runAsNonRoot": null,
+                    "runAsUser": null,
+                    "seLinuxOptions": null,
+                    "supplementalGroups": null
+                },
+                "serviceAccount": "default",
+                "serviceAccountName": "default",
+                "subdomain": null,
+                "terminationGracePeriodSeconds": 30,
+                "tolerations": [
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.alpha.kubernetes.io/notReady",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300,
+                        "value": null
+                    },
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.alpha.kubernetes.io/unreachable",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300,
+                        "value": null
+                    }
+                ],
+                "volumes": [
+                    {
+                        "awsElasticBlockStore": null,
+                        "azureDisk": null,
+                        "azureFile": null,
+                        "cephfs": null,
+                        "cinder": null,
+                        "configMap": null,
+                        "downwardAPI": null,
+                        "emptyDir": null,
+                        "fc": null,
+                        "flexVolume": null,
+                        "flocker": null,
+                        "gcePersistentDisk": null,
+                        "gitRepo": null,
+                        "glusterfs": null,
+                        "hostPath": null,
+                        "iscsi": null,
+                        "name": "default-token-9s5zd",
+                        "nfs": null,
+                        "persistentVolumeClaim": null,
+                        "photonPersistentDisk": null,
+                        "portworxVolume": null,
+                        "projected": null,
+                        "quobyte": null,
+                        "rbd": null,
+                        "scaleIO": null,
+                        "secret": {
+                            "defaultMode": 420,
+                            "items": null,
+                            "optional": null,
+                            "secretName": "default-token-9s5zd"
+                        },
+                        "storageos": null,
+                        "vsphereVolume": null
+                    }
+                ]
+            },
+            "status": {
+                "conditions": [
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-23T13:57:41Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "Initialized"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-23T13:58:05Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "Ready"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-23T13:57:41Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "PodScheduled"
+                    }
+                ],
+                "containerStatuses": [
+                    {
+                        "containerID": "docker://67108bf915e87132dcaffca06e1f874397985eaace9cfc7210f62c508b86752f",
+                        "image": "gcr.io/google-samples/kubernetes-bootcamp:v1",
+                        "imageID": "docker-pullable://gcr.io/google-samples/kubernetes-bootcamp@sha256:0d6b8ee63bb57c5f5b6156f446b3bc3b3c143d233037f3a2f00e279c8fcc64af",
+                        "lastState": {
+                            "running": null,
+                            "terminated": null,
+                            "waiting": null
+                        },
+                        "name": "kubernetes-bootcamp",
+                        "ready": true,
+                        "restartCount": 0,
+                        "state": {
+                            "running": {
+                                "startedAt": "2018-02-23T13:58:04Z"
+                            },
+                            "terminated": null,
+                            "waiting": null
+                        }
+                    }
+                ],
+                "hostIP": "10.240.0.4",
+                "initContainerStatuses": null,
+                "message": null,
+                "phase": "Running",
+                "podIP": "10.244.0.53",
+                "qosClass": "BestEffort",
+                "reason": null,
+                "startTime": "2018-02-23T13:57:41Z"
+            }
+        },
+        {
+            "apiVersion": null,
+            "kind": null,
+            "metadata": {
+                "annotations": {
+                    "kubernetes.io/created-by": "{\"kind\":\"SerializedReference\",\"apiVersion\":\"v1\",\"reference\":{\"kind\":\"ReplicaSet\",\"namespace\":\"default\",\"name\":\"mailer-7dcc5c8cf8\",\"uid\":\"683c2b8f-17d0-11e8-85de-0a58ac1f1ce4\",\"apiVersion\":\"extensions\",\"resourceVersion\":\"523203\"}}\n",
+                    "prometheus.io.scrape": "false"
+                },
+                "clusterName": null,
+                "creationTimestamp": "2018-02-22T13:00:50Z",
+                "deletionGracePeriodSeconds": null,
+                "deletionTimestamp": null,
+                "finalizers": null,
+                "generateName": "mailer-7dcc5c8cf8-",
+                "generation": null,
+                "initializers": null,
+                "labels": {
+                    "faas_function": "mailer",
+                    "pod-template-hash": "3877174794"
+                },
+                "name": "mailer-7dcc5c8cf8-r7jvg",
+                "namespace": "default",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "extensions/v1beta1",
+                        "blockOwnerDeletion": true,
+                        "controller": true,
+                        "kind": "ReplicaSet",
+                        "name": "mailer-7dcc5c8cf8",
+                        "uid": "683c2b8f-17d0-11e8-85de-0a58ac1f1ce4"
+                    }
+                ],
+                "resourceVersion": "1348015",
+                "selfLink": "/api/v1/namespaces/default/pods/mailer-7dcc5c8cf8-r7jvg",
+                "uid": "68445088-17d0-11e8-85de-0a58ac1f1ce4"
+            },
+            "spec": {
+                "activeDeadlineSeconds": null,
+                "affinity": null,
+                "automountServiceAccountToken": null,
+                "containers": [
+                    {
+                        "args": null,
+                        "command": null,
+                        "env": [
+                            {
+                                "name": "fprocess",
+                                "value": "dotnet ./root.dll",
+                                "valueFrom": null
+                            }
+                        ],
+                        "envFrom": null,
+                        "image": "venkateshsrini3/mailer",
+                        "imagePullPolicy": "Always",
+                        "lifecycle": null,
+                        "livenessProbe": {
+                            "exec": {
+                                "command": [
+                                    "cat",
+                                    "/tmp/.lock"
+                                ]
+                            },
+                            "failureThreshold": 3,
+                            "httpGet": null,
+                            "initialDelaySeconds": 3,
+                            "periodSeconds": 10,
+                            "successThreshold": 1,
+                            "tcpSocket": null,
+                            "timeoutSeconds": 1
+                        },
+                        "name": "mailer",
+                        "ports": [
+                            {
+                                "containerPort": 8080,
+                                "hostIP": null,
+                                "hostPort": null,
+                                "name": null,
+                                "protocol": "TCP"
+                            }
+                        ],
+                        "readinessProbe": {
+                            "exec": {
+                                "command": [
+                                    "cat",
+                                    "/tmp/.lock"
+                                ]
+                            },
+                            "failureThreshold": 3,
+                            "httpGet": null,
+                            "initialDelaySeconds": 3,
+                            "periodSeconds": 10,
+                            "successThreshold": 1,
+                            "tcpSocket": null,
+                            "timeoutSeconds": 1
+                        },
+                        "resources": {
+                            "limits": null,
+                            "requests": null
+                        },
+                        "securityContext": null,
+                        "stdin": null,
+                        "stdinOnce": null,
+                        "terminationMessagePath": "/dev/termination-log",
+                        "terminationMessagePolicy": "File",
+                        "tty": null,
+                        "volumeDevices": null,
+                        "volumeMounts": [
+                            {
+                                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                                "mountPropagation": null,
+                                "name": "default-token-9s5zd",
+                                "readOnly": true,
+                                "subPath": null
+                            }
+                        ],
+                        "workingDir": null
+                    }
+                ],
+                "dnsConfig": null,
+                "dnsPolicy": "ClusterFirst",
+                "hostAliases": null,
+                "hostIPC": null,
+                "hostNetwork": null,
+                "hostPID": null,
+                "hostname": null,
+                "imagePullSecrets": null,
+                "initContainers": null,
+                "nodeName": "aks-nodepool1-32852803-0",
+                "nodeSelector": null,
+                "priority": null,
+                "priorityClassName": null,
+                "restartPolicy": "Always",
+                "schedulerName": "default-scheduler",
+                "securityContext": {
+                    "fsGroup": null,
+                    "runAsNonRoot": null,
+                    "runAsUser": null,
+                    "seLinuxOptions": null,
+                    "supplementalGroups": null
+                },
+                "serviceAccount": "default",
+                "serviceAccountName": "default",
+                "subdomain": null,
+                "terminationGracePeriodSeconds": 30,
+                "tolerations": [
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.alpha.kubernetes.io/notReady",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300,
+                        "value": null
+                    },
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.alpha.kubernetes.io/unreachable",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300,
+                        "value": null
+                    }
+                ],
+                "volumes": [
+                    {
+                        "awsElasticBlockStore": null,
+                        "azureDisk": null,
+                        "azureFile": null,
+                        "cephfs": null,
+                        "cinder": null,
+                        "configMap": null,
+                        "downwardAPI": null,
+                        "emptyDir": null,
+                        "fc": null,
+                        "flexVolume": null,
+                        "flocker": null,
+                        "gcePersistentDisk": null,
+                        "gitRepo": null,
+                        "glusterfs": null,
+                        "hostPath": null,
+                        "iscsi": null,
+                        "name": "default-token-9s5zd",
+                        "nfs": null,
+                        "persistentVolumeClaim": null,
+                        "photonPersistentDisk": null,
+                        "portworxVolume": null,
+                        "projected": null,
+                        "quobyte": null,
+                        "rbd": null,
+                        "scaleIO": null,
+                        "secret": {
+                            "defaultMode": 420,
+                            "items": null,
+                            "optional": null,
+                            "secretName": "default-token-9s5zd"
+                        },
+                        "storageos": null,
+                        "vsphereVolume": null
+                    }
+                ]
+            },
+            "status": {
+                "conditions": [
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-22T13:00:50Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "Initialized"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-22T13:00:58Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "Ready"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-22T13:00:50Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "PodScheduled"
+                    }
+                ],
+                "containerStatuses": [
+                    {
+                        "containerID": "docker://7edb16fb9ac7c47d192780b59a3c5e74a84fb4fa5db3077291ff2e48d8b2b254",
+                        "image": "venkateshsrini3/mailer:latest",
+                        "imageID": "docker-pullable://venkateshsrini3/mailer@sha256:d2df0fcd8bbbfe6c319a9d572d3be3c1ee0c0fcba86c2294bec38c3d633682b0",
+                        "lastState": {
+                            "running": null,
+                            "terminated": null,
+                            "waiting": null
+                        },
+                        "name": "mailer",
+                        "ready": true,
+                        "restartCount": 0,
+                        "state": {
+                            "running": {
+                                "startedAt": "2018-02-22T13:00:52Z"
+                            },
+                            "terminated": null,
+                            "waiting": null
+                        }
+                    }
+                ],
+                "hostIP": "10.240.0.4",
+                "initContainerStatuses": null,
+                "message": null,
+                "phase": "Running",
+                "podIP": "10.244.0.52",
+                "qosClass": "BestEffort",
+                "reason": null,
+                "startTime": "2018-02-22T13:00:50Z"
+            }
+        },
+        {
+            "apiVersion": null,
+            "kind": null,
+            "metadata": {
+                "annotations": {
+                    "kubernetes.io/created-by": "{\"kind\":\"SerializedReference\",\"apiVersion\":\"v1\",\"reference\":{\"kind\":\"ReplicaSet\",\"namespace\":\"default\",\"name\":\"nats-75687dc558\",\"uid\":\"329d717e-13ab-11e8-85de-0a58ac1f1ce4\",\"apiVersion\":\"extensions\",\"resourceVersion\":\"2170\"}}\n"
+                },
+                "clusterName": null,
+                "creationTimestamp": "2018-02-17T06:24:24Z",
+                "deletionGracePeriodSeconds": null,
+                "deletionTimestamp": null,
+                "finalizers": null,
+                "generateName": "nats-75687dc558-",
+                "generation": null,
+                "initializers": null,
+                "labels": {
+                    "app": "nats",
+                    "pod-template-hash": "3124387114"
+                },
+                "name": "nats-75687dc558-49jjl",
+                "namespace": "default",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "extensions/v1beta1",
+                        "blockOwnerDeletion": true,
+                        "controller": true,
+                        "kind": "ReplicaSet",
+                        "name": "nats-75687dc558",
+                        "uid": "329d717e-13ab-11e8-85de-0a58ac1f1ce4"
+                    }
+                ],
+                "resourceVersion": "1347961",
+                "selfLink": "/api/v1/namespaces/default/pods/nats-75687dc558-49jjl",
+                "uid": "329ea989-13ab-11e8-85de-0a58ac1f1ce4"
+            },
+            "spec": {
+                "activeDeadlineSeconds": null,
+                "affinity": null,
+                "automountServiceAccountToken": null,
+                "containers": [
+                    {
+                        "args": [
+                            "--store",
+                            "memory",
+                            "--cluster_id",
+                            "faas-cluster"
+                        ],
+                        "command": [
+                            "/nats-streaming-server"
+                        ],
+                        "env": null,
+                        "envFrom": null,
+                        "image": "nats-streaming:0.6.0",
+                        "imagePullPolicy": "Always",
+                        "lifecycle": null,
+                        "livenessProbe": null,
+                        "name": "nats",
+                        "ports": [
+                            {
+                                "containerPort": 4222,
+                                "hostIP": null,
+                                "hostPort": null,
+                                "name": null,
+                                "protocol": "TCP"
+                            },
+                            {
+                                "containerPort": 8222,
+                                "hostIP": null,
+                                "hostPort": null,
+                                "name": null,
+                                "protocol": "TCP"
+                            }
+                        ],
+                        "readinessProbe": null,
+                        "resources": {
+                            "limits": null,
+                            "requests": null
+                        },
+                        "securityContext": null,
+                        "stdin": null,
+                        "stdinOnce": null,
+                        "terminationMessagePath": "/dev/termination-log",
+                        "terminationMessagePolicy": "File",
+                        "tty": null,
+                        "volumeDevices": null,
+                        "volumeMounts": [
+                            {
+                                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                                "mountPropagation": null,
+                                "name": "default-token-9s5zd",
+                                "readOnly": true,
+                                "subPath": null
+                            }
+                        ],
+                        "workingDir": null
+                    }
+                ],
+                "dnsConfig": null,
+                "dnsPolicy": "ClusterFirst",
+                "hostAliases": null,
+                "hostIPC": null,
+                "hostNetwork": null,
+                "hostPID": null,
+                "hostname": null,
+                "imagePullSecrets": null,
+                "initContainers": null,
+                "nodeName": "aks-nodepool1-32852803-0",
+                "nodeSelector": null,
+                "priority": null,
+                "priorityClassName": null,
+                "restartPolicy": "Always",
+                "schedulerName": "default-scheduler",
+                "securityContext": {
+                    "fsGroup": null,
+                    "runAsNonRoot": null,
+                    "runAsUser": null,
+                    "seLinuxOptions": null,
+                    "supplementalGroups": null
+                },
+                "serviceAccount": "default",
+                "serviceAccountName": "default",
+                "subdomain": null,
+                "terminationGracePeriodSeconds": 30,
+                "tolerations": [
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.alpha.kubernetes.io/notReady",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300,
+                        "value": null
+                    },
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.alpha.kubernetes.io/unreachable",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300,
+                        "value": null
+                    }
+                ],
+                "volumes": [
+                    {
+                        "awsElasticBlockStore": null,
+                        "azureDisk": null,
+                        "azureFile": null,
+                        "cephfs": null,
+                        "cinder": null,
+                        "configMap": null,
+                        "downwardAPI": null,
+                        "emptyDir": null,
+                        "fc": null,
+                        "flexVolume": null,
+                        "flocker": null,
+                        "gcePersistentDisk": null,
+                        "gitRepo": null,
+                        "glusterfs": null,
+                        "hostPath": null,
+                        "iscsi": null,
+                        "name": "default-token-9s5zd",
+                        "nfs": null,
+                        "persistentVolumeClaim": null,
+                        "photonPersistentDisk": null,
+                        "portworxVolume": null,
+                        "projected": null,
+                        "quobyte": null,
+                        "rbd": null,
+                        "scaleIO": null,
+                        "secret": {
+                            "defaultMode": 420,
+                            "items": null,
+                            "optional": null,
+                            "secretName": "default-token-9s5zd"
+                        },
+                        "storageos": null,
+                        "vsphereVolume": null
+                    }
+                ]
+            },
+            "status": {
+                "conditions": [
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-17T06:24:24Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "Initialized"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-17T06:24:33Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "Ready"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-17T06:24:24Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "PodScheduled"
+                    }
+                ],
+                "containerStatuses": [
+                    {
+                        "containerID": "docker://89176aebfd95b71d34f2094845842459ff0e24ad6a6218261e9f1eed02690b02",
+                        "image": "nats-streaming:0.6.0",
+                        "imageID": "docker-pullable://nats-streaming@sha256:91a32b633bf113f9bf29b259e5e2b3bde05f2ebbd233ded67621202487dbd0d9",
+                        "lastState": {
+                            "running": null,
+                            "terminated": null,
+                            "waiting": null
+                        },
+                        "name": "nats",
+                        "ready": true,
+                        "restartCount": 0,
+                        "state": {
+                            "running": {
+                                "startedAt": "2018-02-17T06:24:33Z"
+                            },
+                            "terminated": null,
+                            "waiting": null
+                        }
+                    }
+                ],
+                "hostIP": "10.240.0.4",
+                "initContainerStatuses": null,
+                "message": null,
+                "phase": "Running",
+                "podIP": "10.244.0.17",
+                "qosClass": "BestEffort",
+                "reason": null,
+                "startTime": "2018-02-17T06:24:24Z"
+            }
+        },
+        {
+            "apiVersion": null,
+            "kind": null,
+            "metadata": {
+                "annotations": {
+                    "kubernetes.io/created-by": "{\"kind\":\"SerializedReference\",\"apiVersion\":\"v1\",\"reference\":{\"kind\":\"ReplicaSet\",\"namespace\":\"default\",\"name\":\"order-549fc85b97\",\"uid\":\"5741b5fc-16fe-11e8-85de-0a58ac1f1ce4\",\"apiVersion\":\"extensions\",\"resourceVersion\":\"419792\"}}\n"
+                },
+                "clusterName": null,
+                "creationTimestamp": "2018-02-21T11:57:07Z",
+                "deletionGracePeriodSeconds": null,
+                "deletionTimestamp": null,
+                "finalizers": null,
+                "generateName": "order-549fc85b97-",
+                "generation": null,
+                "initializers": null,
+                "labels": {
+                    "pod-template-hash": "1059741653",
+                    "run": "order"
+                },
+                "name": "order-549fc85b97-rkpwd",
+                "namespace": "default",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "extensions/v1beta1",
+                        "blockOwnerDeletion": true,
+                        "controller": true,
+                        "kind": "ReplicaSet",
+                        "name": "order-549fc85b97",
+                        "uid": "5741b5fc-16fe-11e8-85de-0a58ac1f1ce4"
+                    }
+                ],
+                "resourceVersion": "3254188",
+                "selfLink": "/api/v1/namespaces/default/pods/order-549fc85b97-rkpwd",
+                "uid": "5748a861-16fe-11e8-85de-0a58ac1f1ce4"
+            },
+            "spec": {
+                "activeDeadlineSeconds": null,
+                "affinity": null,
+                "automountServiceAccountToken": null,
+                "containers": [
+                    {
+                        "args": null,
+                        "command": null,
+                        "env": null,
+                        "envFrom": null,
+                        "image": "order",
+                        "imagePullPolicy": "Always",
+                        "lifecycle": null,
+                        "livenessProbe": null,
+                        "name": "order",
+                        "ports": [
+                            {
+                                "containerPort": 8080,
+                                "hostIP": null,
+                                "hostPort": null,
+                                "name": null,
+                                "protocol": "TCP"
+                            }
+                        ],
+                        "readinessProbe": null,
+                        "resources": {
+                            "limits": null,
+                            "requests": null
+                        },
+                        "securityContext": null,
+                        "stdin": null,
+                        "stdinOnce": null,
+                        "terminationMessagePath": "/dev/termination-log",
+                        "terminationMessagePolicy": "File",
+                        "tty": null,
+                        "volumeDevices": null,
+                        "volumeMounts": [
+                            {
+                                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                                "mountPropagation": null,
+                                "name": "default-token-9s5zd",
+                                "readOnly": true,
+                                "subPath": null
+                            }
+                        ],
+                        "workingDir": null
+                    }
+                ],
+                "dnsConfig": null,
+                "dnsPolicy": "ClusterFirst",
+                "hostAliases": null,
+                "hostIPC": null,
+                "hostNetwork": null,
+                "hostPID": null,
+                "hostname": null,
+                "imagePullSecrets": null,
+                "initContainers": null,
+                "nodeName": "aks-nodepool1-32852803-0",
+                "nodeSelector": null,
+                "priority": null,
+                "priorityClassName": null,
+                "restartPolicy": "Always",
+                "schedulerName": "default-scheduler",
+                "securityContext": {
+                    "fsGroup": null,
+                    "runAsNonRoot": null,
+                    "runAsUser": null,
+                    "seLinuxOptions": null,
+                    "supplementalGroups": null
+                },
+                "serviceAccount": "default",
+                "serviceAccountName": "default",
+                "subdomain": null,
+                "terminationGracePeriodSeconds": 30,
+                "tolerations": [
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.alpha.kubernetes.io/notReady",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300,
+                        "value": null
+                    },
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.alpha.kubernetes.io/unreachable",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300,
+                        "value": null
+                    }
+                ],
+                "volumes": [
+                    {
+                        "awsElasticBlockStore": null,
+                        "azureDisk": null,
+                        "azureFile": null,
+                        "cephfs": null,
+                        "cinder": null,
+                        "configMap": null,
+                        "downwardAPI": null,
+                        "emptyDir": null,
+                        "fc": null,
+                        "flexVolume": null,
+                        "flocker": null,
+                        "gcePersistentDisk": null,
+                        "gitRepo": null,
+                        "glusterfs": null,
+                        "hostPath": null,
+                        "iscsi": null,
+                        "name": "default-token-9s5zd",
+                        "nfs": null,
+                        "persistentVolumeClaim": null,
+                        "photonPersistentDisk": null,
+                        "portworxVolume": null,
+                        "projected": null,
+                        "quobyte": null,
+                        "rbd": null,
+                        "scaleIO": null,
+                        "secret": {
+                            "defaultMode": 420,
+                            "items": null,
+                            "optional": null,
+                            "secretName": "default-token-9s5zd"
+                        },
+                        "storageos": null,
+                        "vsphereVolume": null
+                    }
+                ]
+            },
+            "status": {
+                "conditions": [
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-21T11:57:07Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "Initialized"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-21T11:57:07Z",
+                        "message": "containers with unready status: [order]",
+                        "reason": "ContainersNotReady",
+                        "status": "False",
+                        "type": "Ready"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-21T11:57:07Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "PodScheduled"
+                    }
+                ],
+                "containerStatuses": [
+                    {
+                        "containerID": null,
+                        "image": "order",
+                        "imageID": "",
+                        "lastState": {
+                            "running": null,
+                            "terminated": null,
+                            "waiting": null
+                        },
+                        "name": "order",
+                        "ready": false,
+                        "restartCount": 0,
+                        "state": {
+                            "running": null,
+                            "terminated": null,
+                            "waiting": {
+                                "message": "Back-off pulling image \"order\"",
+                                "reason": "ImagePullBackOff"
+                            }
+                        }
+                    }
+                ],
+                "hostIP": "10.240.0.4",
+                "initContainerStatuses": null,
+                "message": null,
+                "phase": "Pending",
+                "podIP": "10.244.0.42",
+                "qosClass": "BestEffort",
+                "reason": null,
+                "startTime": "2018-02-21T11:57:07Z"
+            }
+        },
+        {
+            "apiVersion": null,
+            "kind": null,
+            "metadata": {
+                "annotations": {
+                    "checksum/prometheus-config": "696512ecaafb7b2be2fccba7ec05781212faefd7b636e661c59c86a25dbd515d",
+                    "kubernetes.io/created-by": "{\"kind\":\"SerializedReference\",\"apiVersion\":\"v1\",\"reference\":{\"kind\":\"ReplicaSet\",\"namespace\":\"default\",\"name\":\"prometheus-59f8d9864c\",\"uid\":\"329e3226-13ab-11e8-85de-0a58ac1f1ce4\",\"apiVersion\":\"extensions\",\"resourceVersion\":\"2172\"}}\n"
+                },
+                "clusterName": null,
+                "creationTimestamp": "2018-02-17T06:24:24Z",
+                "deletionGracePeriodSeconds": null,
+                "deletionTimestamp": null,
+                "finalizers": null,
+                "generateName": "prometheus-59f8d9864c-",
+                "generation": null,
+                "initializers": null,
+                "labels": {
+                    "app": "prometheus",
+                    "pod-template-hash": "1594854207"
+                },
+                "name": "prometheus-59f8d9864c-v89gh",
+                "namespace": "default",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "extensions/v1beta1",
+                        "blockOwnerDeletion": true,
+                        "controller": true,
+                        "kind": "ReplicaSet",
+                        "name": "prometheus-59f8d9864c",
+                        "uid": "329e3226-13ab-11e8-85de-0a58ac1f1ce4"
+                    }
+                ],
+                "resourceVersion": "1347983",
+                "selfLink": "/api/v1/namespaces/default/pods/prometheus-59f8d9864c-v89gh",
+                "uid": "329fb115-13ab-11e8-85de-0a58ac1f1ce4"
+            },
+            "spec": {
+                "activeDeadlineSeconds": null,
+                "affinity": null,
+                "automountServiceAccountToken": null,
+                "containers": [
+                    {
+                        "args": null,
+                        "command": [
+                            "prometheus",
+                            "--config.file=/etc/prometheus/prometheus.yml"
+                        ],
+                        "env": null,
+                        "envFrom": null,
+                        "image": "prom/prometheus:v2.1.0",
+                        "imagePullPolicy": "Always",
+                        "lifecycle": null,
+                        "livenessProbe": null,
+                        "name": "prometheus",
+                        "ports": [
+                            {
+                                "containerPort": 9090,
+                                "hostIP": null,
+                                "hostPort": null,
+                                "name": null,
+                                "protocol": "TCP"
+                            }
+                        ],
+                        "readinessProbe": null,
+                        "resources": {
+                            "limits": null,
+                            "requests": null
+                        },
+                        "securityContext": null,
+                        "stdin": null,
+                        "stdinOnce": null,
+                        "terminationMessagePath": "/dev/termination-log",
+                        "terminationMessagePolicy": "File",
+                        "tty": null,
+                        "volumeDevices": null,
+                        "volumeMounts": [
+                            {
+                                "mountPath": "/etc/prometheus/prometheus.yml",
+                                "mountPropagation": null,
+                                "name": "prometheus-config",
+                                "readOnly": null,
+                                "subPath": "prometheus.yml"
+                            },
+                            {
+                                "mountPath": "/etc/prometheus/alert.rules",
+                                "mountPropagation": null,
+                                "name": "prometheus-config",
+                                "readOnly": null,
+                                "subPath": "alert.rules"
+                            },
+                            {
+                                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                                "mountPropagation": null,
+                                "name": "default-token-9s5zd",
+                                "readOnly": true,
+                                "subPath": null
+                            }
+                        ],
+                        "workingDir": null
+                    }
+                ],
+                "dnsConfig": null,
+                "dnsPolicy": "ClusterFirst",
+                "hostAliases": null,
+                "hostIPC": null,
+                "hostNetwork": null,
+                "hostPID": null,
+                "hostname": null,
+                "imagePullSecrets": null,
+                "initContainers": null,
+                "nodeName": "aks-nodepool1-32852803-0",
+                "nodeSelector": null,
+                "priority": null,
+                "priorityClassName": null,
+                "restartPolicy": "Always",
+                "schedulerName": "default-scheduler",
+                "securityContext": {
+                    "fsGroup": null,
+                    "runAsNonRoot": null,
+                    "runAsUser": null,
+                    "seLinuxOptions": null,
+                    "supplementalGroups": null
+                },
+                "serviceAccount": "default",
+                "serviceAccountName": "default",
+                "subdomain": null,
+                "terminationGracePeriodSeconds": 30,
+                "tolerations": [
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.alpha.kubernetes.io/notReady",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300,
+                        "value": null
+                    },
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.alpha.kubernetes.io/unreachable",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300,
+                        "value": null
+                    }
+                ],
+                "volumes": [
+                    {
+                        "awsElasticBlockStore": null,
+                        "azureDisk": null,
+                        "azureFile": null,
+                        "cephfs": null,
+                        "cinder": null,
+                        "configMap": {
+                            "defaultMode": 420,
+                            "items": [
+                                {
+                                    "key": "prometheus.yml",
+                                    "mode": 420,
+                                    "path": "prometheus.yml"
+                                },
+                                {
+                                    "key": "alert.rules",
+                                    "mode": 420,
+                                    "path": "alert.rules"
+                                }
+                            ],
+                            "name": "prometheus-config",
+                            "optional": null
+                        },
+                        "downwardAPI": null,
+                        "emptyDir": null,
+                        "fc": null,
+                        "flexVolume": null,
+                        "flocker": null,
+                        "gcePersistentDisk": null,
+                        "gitRepo": null,
+                        "glusterfs": null,
+                        "hostPath": null,
+                        "iscsi": null,
+                        "name": "prometheus-config",
+                        "nfs": null,
+                        "persistentVolumeClaim": null,
+                        "photonPersistentDisk": null,
+                        "portworxVolume": null,
+                        "projected": null,
+                        "quobyte": null,
+                        "rbd": null,
+                        "scaleIO": null,
+                        "secret": null,
+                        "storageos": null,
+                        "vsphereVolume": null
+                    },
+                    {
+                        "awsElasticBlockStore": null,
+                        "azureDisk": null,
+                        "azureFile": null,
+                        "cephfs": null,
+                        "cinder": null,
+                        "configMap": null,
+                        "downwardAPI": null,
+                        "emptyDir": null,
+                        "fc": null,
+                        "flexVolume": null,
+                        "flocker": null,
+                        "gcePersistentDisk": null,
+                        "gitRepo": null,
+                        "glusterfs": null,
+                        "hostPath": null,
+                        "iscsi": null,
+                        "name": "default-token-9s5zd",
+                        "nfs": null,
+                        "persistentVolumeClaim": null,
+                        "photonPersistentDisk": null,
+                        "portworxVolume": null,
+                        "projected": null,
+                        "quobyte": null,
+                        "rbd": null,
+                        "scaleIO": null,
+                        "secret": {
+                            "defaultMode": 420,
+                            "items": null,
+                            "optional": null,
+                            "secretName": "default-token-9s5zd"
+                        },
+                        "storageos": null,
+                        "vsphereVolume": null
+                    }
+                ]
+            },
+            "status": {
+                "conditions": [
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-17T06:24:24Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "Initialized"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-17T06:24:33Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "Ready"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-17T06:24:24Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "PodScheduled"
+                    }
+                ],
+                "containerStatuses": [
+                    {
+                        "containerID": "docker://223579d6c12f993c7b29311deadf85710a3204f7448e287242837722ed2d7a2c",
+                        "image": "prom/prometheus:v2.1.0",
+                        "imageID": "docker-pullable://prom/prometheus@sha256:7b987901dbc44d17a88e7bda42dbbbb743c161e3152662959acd9f35aeefb9a3",
+                        "lastState": {
+                            "running": null,
+                            "terminated": null,
+                            "waiting": null
+                        },
+                        "name": "prometheus",
+                        "ready": true,
+                        "restartCount": 0,
+                        "state": {
+                            "running": {
+                                "startedAt": "2018-02-17T06:24:32Z"
+                            },
+                            "terminated": null,
+                            "waiting": null
+                        }
+                    }
+                ],
+                "hostIP": "10.240.0.4",
+                "initContainerStatuses": null,
+                "message": null,
+                "phase": "Running",
+                "podIP": "10.244.0.15",
+                "qosClass": "BestEffort",
+                "reason": null,
+                "startTime": "2018-02-17T06:24:24Z"
+            }
+        },
+        {
+            "apiVersion": null,
+            "kind": null,
+            "metadata": {
+                "annotations": {
+                    "kubernetes.io/created-by": "{\"kind\":\"SerializedReference\",\"apiVersion\":\"v1\",\"reference\":{\"kind\":\"ReplicaSet\",\"namespace\":\"default\",\"name\":\"queue-worker-6b6f5c95bb\",\"uid\":\"32a2d54b-13ab-11e8-85de-0a58ac1f1ce4\",\"apiVersion\":\"extensions\",\"resourceVersion\":\"2189\"}}\n"
+                },
+                "clusterName": null,
+                "creationTimestamp": "2018-02-17T06:24:24Z",
+                "deletionGracePeriodSeconds": null,
+                "deletionTimestamp": null,
+                "finalizers": null,
+                "generateName": "queue-worker-6b6f5c95bb-",
+                "generation": null,
+                "initializers": null,
+                "labels": {
+                    "app": "queue-worker",
+                    "pod-template-hash": "2629175166"
+                },
+                "name": "queue-worker-6b6f5c95bb-pwdtg",
+                "namespace": "default",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "extensions/v1beta1",
+                        "blockOwnerDeletion": true,
+                        "controller": true,
+                        "kind": "ReplicaSet",
+                        "name": "queue-worker-6b6f5c95bb",
+                        "uid": "32a2d54b-13ab-11e8-85de-0a58ac1f1ce4"
+                    }
+                ],
+                "resourceVersion": "1347988",
+                "selfLink": "/api/v1/namespaces/default/pods/queue-worker-6b6f5c95bb-pwdtg",
+                "uid": "32ac61b0-13ab-11e8-85de-0a58ac1f1ce4"
+            },
+            "spec": {
+                "activeDeadlineSeconds": null,
+                "affinity": null,
+                "automountServiceAccountToken": null,
+                "containers": [
+                    {
+                        "args": null,
+                        "command": null,
+                        "env": null,
+                        "envFrom": null,
+                        "image": "functions/queue-worker:0.4",
+                        "imagePullPolicy": "Always",
+                        "lifecycle": null,
+                        "livenessProbe": null,
+                        "name": "queue-worker",
+                        "ports": null,
+                        "readinessProbe": null,
+                        "resources": {
+                            "limits": null,
+                            "requests": null
+                        },
+                        "securityContext": null,
+                        "stdin": null,
+                        "stdinOnce": null,
+                        "terminationMessagePath": "/dev/termination-log",
+                        "terminationMessagePolicy": "File",
+                        "tty": null,
+                        "volumeDevices": null,
+                        "volumeMounts": [
+                            {
+                                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                                "mountPropagation": null,
+                                "name": "default-token-9s5zd",
+                                "readOnly": true,
+                                "subPath": null
+                            }
+                        ],
+                        "workingDir": null
+                    }
+                ],
+                "dnsConfig": null,
+                "dnsPolicy": "ClusterFirst",
+                "hostAliases": null,
+                "hostIPC": null,
+                "hostNetwork": null,
+                "hostPID": null,
+                "hostname": null,
+                "imagePullSecrets": null,
+                "initContainers": null,
+                "nodeName": "aks-nodepool1-32852803-0",
+                "nodeSelector": null,
+                "priority": null,
+                "priorityClassName": null,
+                "restartPolicy": "Always",
+                "schedulerName": "default-scheduler",
+                "securityContext": {
+                    "fsGroup": null,
+                    "runAsNonRoot": null,
+                    "runAsUser": null,
+                    "seLinuxOptions": null,
+                    "supplementalGroups": null
+                },
+                "serviceAccount": "default",
+                "serviceAccountName": "default",
+                "subdomain": null,
+                "terminationGracePeriodSeconds": 30,
+                "tolerations": [
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.alpha.kubernetes.io/notReady",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300,
+                        "value": null
+                    },
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.alpha.kubernetes.io/unreachable",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300,
+                        "value": null
+                    }
+                ],
+                "volumes": [
+                    {
+                        "awsElasticBlockStore": null,
+                        "azureDisk": null,
+                        "azureFile": null,
+                        "cephfs": null,
+                        "cinder": null,
+                        "configMap": null,
+                        "downwardAPI": null,
+                        "emptyDir": null,
+                        "fc": null,
+                        "flexVolume": null,
+                        "flocker": null,
+                        "gcePersistentDisk": null,
+                        "gitRepo": null,
+                        "glusterfs": null,
+                        "hostPath": null,
+                        "iscsi": null,
+                        "name": "default-token-9s5zd",
+                        "nfs": null,
+                        "persistentVolumeClaim": null,
+                        "photonPersistentDisk": null,
+                        "portworxVolume": null,
+                        "projected": null,
+                        "quobyte": null,
+                        "rbd": null,
+                        "scaleIO": null,
+                        "secret": {
+                            "defaultMode": 420,
+                            "items": null,
+                            "optional": null,
+                            "secretName": "default-token-9s5zd"
+                        },
+                        "storageos": null,
+                        "vsphereVolume": null
+                    }
+                ]
+            },
+            "status": {
+                "conditions": [
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-17T06:24:24Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "Initialized"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-17T06:24:36Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "Ready"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-17T06:24:24Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "PodScheduled"
+                    }
+                ],
+                "containerStatuses": [
+                    {
+                        "containerID": "docker://f9dbccbfe880333eedabdaf1ed9dc6670b6768836535e22f98da017d3242bf28",
+                        "image": "functions/queue-worker:0.4",
+                        "imageID": "docker-pullable://functions/queue-worker@sha256:c74aca2dfcc2ad3a2a0f5b9bb20eaae3656850b8e92236cac96e09ded4f615bc",
+                        "lastState": {
+                            "running": null,
+                            "terminated": null,
+                            "waiting": null
+                        },
+                        "name": "queue-worker",
+                        "ready": true,
+                        "restartCount": 0,
+                        "state": {
+                            "running": {
+                                "startedAt": "2018-02-17T06:24:35Z"
+                            },
+                            "terminated": null,
+                            "waiting": null
+                        }
+                    }
+                ],
+                "hostIP": "10.240.0.4",
+                "initContainerStatuses": null,
+                "message": null,
+                "phase": "Running",
+                "podIP": "10.244.0.18",
+                "qosClass": "BestEffort",
+                "reason": null,
+                "startTime": "2018-02-17T06:24:24Z"
+            }
+        },
+        {
+            "apiVersion": null,
+            "kind": null,
+            "metadata": {
+                "annotations": {
+                    "kubernetes.io/created-by": "{\"kind\":\"SerializedReference\",\"apiVersion\":\"v1\",\"reference\":{\"kind\":\"ReplicaSet\",\"namespace\":\"default\",\"name\":\"readkubelogs-fd66d5d57\",\"uid\":\"f25d597b-2757-11e8-85de-0a58ac1f1ce4\",\"apiVersion\":\"extensions\",\"resourceVersion\":\"2479257\"}}\n"
+                },
+                "clusterName": null,
+                "creationTimestamp": "2018-03-14T09:33:00Z",
+                "deletionGracePeriodSeconds": null,
+                "deletionTimestamp": null,
+                "finalizers": null,
+                "generateName": "readkubelogs-fd66d5d57-",
+                "generation": null,
+                "initializers": null,
+                "labels": {
+                    "pod-template-hash": "982281813",
+                    "run": "readkubelogs"
+                },
+                "name": "readkubelogs-fd66d5d57-4zlzf",
+                "namespace": "default",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "extensions/v1beta1",
+                        "blockOwnerDeletion": true,
+                        "controller": true,
+                        "kind": "ReplicaSet",
+                        "name": "readkubelogs-fd66d5d57",
+                        "uid": "f25d597b-2757-11e8-85de-0a58ac1f1ce4"
+                    }
+                ],
+                "resourceVersion": "3254139",
+                "selfLink": "/api/v1/namespaces/default/pods/readkubelogs-fd66d5d57-4zlzf",
+                "uid": "afdfefd6-276a-11e8-85de-0a58ac1f1ce4"
+            },
+            "spec": {
+                "activeDeadlineSeconds": null,
+                "affinity": null,
+                "automountServiceAccountToken": null,
+                "containers": [
+                    {
+                        "args": null,
+                        "command": null,
+                        "env": null,
+                        "envFrom": null,
+                        "image": "readkubelogs.service",
+                        "imagePullPolicy": "Always",
+                        "lifecycle": null,
+                        "livenessProbe": null,
+                        "name": "readkubelogs",
+                        "ports": [
+                            {
+                                "containerPort": 5000,
+                                "hostIP": null,
+                                "hostPort": null,
+                                "name": null,
+                                "protocol": "TCP"
+                            }
+                        ],
+                        "readinessProbe": null,
+                        "resources": {
+                            "limits": null,
+                            "requests": null
+                        },
+                        "securityContext": null,
+                        "stdin": null,
+                        "stdinOnce": null,
+                        "terminationMessagePath": "/dev/termination-log",
+                        "terminationMessagePolicy": "File",
+                        "tty": null,
+                        "volumeDevices": null,
+                        "volumeMounts": [
+                            {
+                                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                                "mountPropagation": null,
+                                "name": "default-token-9s5zd",
+                                "readOnly": true,
+                                "subPath": null
+                            }
+                        ],
+                        "workingDir": null
+                    }
+                ],
+                "dnsConfig": null,
+                "dnsPolicy": "ClusterFirst",
+                "hostAliases": null,
+                "hostIPC": null,
+                "hostNetwork": null,
+                "hostPID": null,
+                "hostname": null,
+                "imagePullSecrets": null,
+                "initContainers": null,
+                "nodeName": "aks-nodepool1-32852803-0",
+                "nodeSelector": null,
+                "priority": null,
+                "priorityClassName": null,
+                "restartPolicy": "Always",
+                "schedulerName": "default-scheduler",
+                "securityContext": {
+                    "fsGroup": null,
+                    "runAsNonRoot": null,
+                    "runAsUser": null,
+                    "seLinuxOptions": null,
+                    "supplementalGroups": null
+                },
+                "serviceAccount": "default",
+                "serviceAccountName": "default",
+                "subdomain": null,
+                "terminationGracePeriodSeconds": 30,
+                "tolerations": [
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.alpha.kubernetes.io/notReady",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300,
+                        "value": null
+                    },
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.alpha.kubernetes.io/unreachable",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300,
+                        "value": null
+                    }
+                ],
+                "volumes": [
+                    {
+                        "awsElasticBlockStore": null,
+                        "azureDisk": null,
+                        "azureFile": null,
+                        "cephfs": null,
+                        "cinder": null,
+                        "configMap": null,
+                        "downwardAPI": null,
+                        "emptyDir": null,
+                        "fc": null,
+                        "flexVolume": null,
+                        "flocker": null,
+                        "gcePersistentDisk": null,
+                        "gitRepo": null,
+                        "glusterfs": null,
+                        "hostPath": null,
+                        "iscsi": null,
+                        "name": "default-token-9s5zd",
+                        "nfs": null,
+                        "persistentVolumeClaim": null,
+                        "photonPersistentDisk": null,
+                        "portworxVolume": null,
+                        "projected": null,
+                        "quobyte": null,
+                        "rbd": null,
+                        "scaleIO": null,
+                        "secret": {
+                            "defaultMode": 420,
+                            "items": null,
+                            "optional": null,
+                            "secretName": "default-token-9s5zd"
+                        },
+                        "storageos": null,
+                        "vsphereVolume": null
+                    }
+                ]
+            },
+            "status": {
+                "conditions": [
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-03-14T09:33:00Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "Initialized"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-03-14T09:33:00Z",
+                        "message": "containers with unready status: [readkubelogs]",
+                        "reason": "ContainersNotReady",
+                        "status": "False",
+                        "type": "Ready"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-03-14T09:33:00Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "PodScheduled"
+                    }
+                ],
+                "containerStatuses": [
+                    {
+                        "containerID": null,
+                        "image": "readkubelogs.service",
+                        "imageID": "",
+                        "lastState": {
+                            "running": null,
+                            "terminated": null,
+                            "waiting": null
+                        },
+                        "name": "readkubelogs",
+                        "ready": false,
+                        "restartCount": 0,
+                        "state": {
+                            "running": null,
+                            "terminated": null,
+                            "waiting": {
+                                "message": "Back-off pulling image \"readkubelogs.service\"",
+                                "reason": "ImagePullBackOff"
+                            }
+                        }
+                    }
+                ],
+                "hostIP": "10.240.0.4",
+                "initContainerStatuses": null,
+                "message": null,
+                "phase": "Pending",
+                "podIP": "10.244.0.59",
+                "qosClass": "BestEffort",
+                "reason": null,
+                "startTime": "2018-03-14T09:33:00Z"
+            }
+        },
+        {
+            "apiVersion": null,
+            "kind": null,
+            "metadata": {
+                "annotations": {
+                    "kubernetes.io/created-by": "{\"kind\":\"SerializedReference\",\"apiVersion\":\"v1\",\"reference\":{\"kind\":\"ReplicaSet\",\"namespace\":\"default\",\"name\":\"readkubelogs-new-79bdd4bfd5\",\"uid\":\"db27e975-2784-11e8-85de-0a58ac1f1ce4\",\"apiVersion\":\"extensions\",\"resourceVersion\":\"2492764\"}}\n"
+                },
+                "clusterName": null,
+                "creationTimestamp": "2018-03-14T12:40:20Z",
+                "deletionGracePeriodSeconds": null,
+                "deletionTimestamp": null,
+                "finalizers": null,
+                "generateName": "readkubelogs-new-79bdd4bfd5-",
+                "generation": null,
+                "initializers": null,
+                "labels": {
+                    "io.kompose.service": "readkubelogs-new",
+                    "pod-template-hash": "3568806981"
+                },
+                "name": "readkubelogs-new-79bdd4bfd5-g6g2c",
+                "namespace": "default",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "extensions/v1beta1",
+                        "blockOwnerDeletion": true,
+                        "controller": true,
+                        "kind": "ReplicaSet",
+                        "name": "readkubelogs-new-79bdd4bfd5",
+                        "uid": "db27e975-2784-11e8-85de-0a58ac1f1ce4"
+                    }
+                ],
+                "resourceVersion": "2492806",
+                "selfLink": "/api/v1/namespaces/default/pods/readkubelogs-new-79bdd4bfd5-g6g2c",
+                "uid": "db2924a9-2784-11e8-85de-0a58ac1f1ce4"
+            },
+            "spec": {
+                "activeDeadlineSeconds": null,
+                "affinity": null,
+                "automountServiceAccountToken": null,
+                "containers": [
+                    {
+                        "args": null,
+                        "command": null,
+                        "env": null,
+                        "envFrom": null,
+                        "image": "venkateshsrini3/readkubelogs",
+                        "imagePullPolicy": "Always",
+                        "lifecycle": null,
+                        "livenessProbe": null,
+                        "name": "readkubelogs-new",
+                        "ports": [
+                            {
+                                "containerPort": 80,
+                                "hostIP": null,
+                                "hostPort": null,
+                                "name": null,
+                                "protocol": "TCP"
+                            }
+                        ],
+                        "readinessProbe": null,
+                        "resources": {
+                            "limits": null,
+                            "requests": null
+                        },
+                        "securityContext": null,
+                        "stdin": null,
+                        "stdinOnce": null,
+                        "terminationMessagePath": "/dev/termination-log",
+                        "terminationMessagePolicy": "File",
+                        "tty": null,
+                        "volumeDevices": null,
+                        "volumeMounts": [
+                            {
+                                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                                "mountPropagation": null,
+                                "name": "default-token-9s5zd",
+                                "readOnly": true,
+                                "subPath": null
+                            }
+                        ],
+                        "workingDir": null
+                    }
+                ],
+                "dnsConfig": null,
+                "dnsPolicy": "ClusterFirst",
+                "hostAliases": null,
+                "hostIPC": null,
+                "hostNetwork": null,
+                "hostPID": null,
+                "hostname": null,
+                "imagePullSecrets": null,
+                "initContainers": null,
+                "nodeName": "aks-nodepool1-32852803-0",
+                "nodeSelector": null,
+                "priority": null,
+                "priorityClassName": null,
+                "restartPolicy": "Always",
+                "schedulerName": "default-scheduler",
+                "securityContext": {
+                    "fsGroup": null,
+                    "runAsNonRoot": null,
+                    "runAsUser": null,
+                    "seLinuxOptions": null,
+                    "supplementalGroups": null
+                },
+                "serviceAccount": "default",
+                "serviceAccountName": "default",
+                "subdomain": null,
+                "terminationGracePeriodSeconds": 30,
+                "tolerations": [
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.alpha.kubernetes.io/notReady",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300,
+                        "value": null
+                    },
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.alpha.kubernetes.io/unreachable",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300,
+                        "value": null
+                    }
+                ],
+                "volumes": [
+                    {
+                        "awsElasticBlockStore": null,
+                        "azureDisk": null,
+                        "azureFile": null,
+                        "cephfs": null,
+                        "cinder": null,
+                        "configMap": null,
+                        "downwardAPI": null,
+                        "emptyDir": null,
+                        "fc": null,
+                        "flexVolume": null,
+                        "flocker": null,
+                        "gcePersistentDisk": null,
+                        "gitRepo": null,
+                        "glusterfs": null,
+                        "hostPath": null,
+                        "iscsi": null,
+                        "name": "default-token-9s5zd",
+                        "nfs": null,
+                        "persistentVolumeClaim": null,
+                        "photonPersistentDisk": null,
+                        "portworxVolume": null,
+                        "projected": null,
+                        "quobyte": null,
+                        "rbd": null,
+                        "scaleIO": null,
+                        "secret": {
+                            "defaultMode": 420,
+                            "items": null,
+                            "optional": null,
+                            "secretName": "default-token-9s5zd"
+                        },
+                        "storageos": null,
+                        "vsphereVolume": null
+                    }
+                ]
+            },
+            "status": {
+                "conditions": [
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-03-14T12:40:20Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "Initialized"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-03-14T12:40:40Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "Ready"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-03-14T12:40:20Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "PodScheduled"
+                    }
+                ],
+                "containerStatuses": [
+                    {
+                        "containerID": "docker://9a591e90bbad795a16bd7d2d8fc376122509cbe72dc8eb40a85319a5c4527a53",
+                        "image": "venkateshsrini3/readkubelogs:latest",
+                        "imageID": "docker-pullable://venkateshsrini3/readkubelogs@sha256:8aa3cfe56e5d1584438483f6361107fa7b65d74a8dbdfed31149132f4c3c199e",
+                        "lastState": {
+                            "running": null,
+                            "terminated": null,
+                            "waiting": null
+                        },
+                        "name": "readkubelogs-new",
+                        "ready": true,
+                        "restartCount": 0,
+                        "state": {
+                            "running": {
+                                "startedAt": "2018-03-14T12:40:40Z"
+                            },
+                            "terminated": null,
+                            "waiting": null
+                        }
+                    }
+                ],
+                "hostIP": "10.240.0.4",
+                "initContainerStatuses": null,
+                "message": null,
+                "phase": "Running",
+                "podIP": "10.244.0.60",
+                "qosClass": "BestEffort",
+                "reason": null,
+                "startTime": "2018-03-14T12:40:20Z"
+            }
+        },
+        {
+            "apiVersion": null,
+            "kind": null,
+            "metadata": {
+                "annotations": {
+                    "kubernetes.io/created-by": "{\"kind\":\"SerializedReference\",\"apiVersion\":\"v1\",\"reference\":{\"kind\":\"ReplicaSet\",\"namespace\":\"default\",\"name\":\"smtpservice-5f5f5b6ffb\",\"uid\":\"218ba6bf-13f2-11e8-85de-0a58ac1f1ce4\",\"apiVersion\":\"extensions\",\"resourceVersion\":\"37061\"}}\n"
+                },
+                "clusterName": null,
+                "creationTimestamp": "2018-02-17T14:52:10Z",
+                "deletionGracePeriodSeconds": null,
+                "deletionTimestamp": null,
+                "finalizers": null,
+                "generateName": "smtpservice-5f5f5b6ffb-",
+                "generation": null,
+                "initializers": null,
+                "labels": {
+                    "io.kompose.service": "smtpservice",
+                    "pod-template-hash": "1919162996"
+                },
+                "name": "smtpservice-5f5f5b6ffb-724mw",
+                "namespace": "default",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "extensions/v1beta1",
+                        "blockOwnerDeletion": true,
+                        "controller": true,
+                        "kind": "ReplicaSet",
+                        "name": "smtpservice-5f5f5b6ffb",
+                        "uid": "218ba6bf-13f2-11e8-85de-0a58ac1f1ce4"
+                    }
+                ],
+                "resourceVersion": "1347966",
+                "selfLink": "/api/v1/namespaces/default/pods/smtpservice-5f5f5b6ffb-724mw",
+                "uid": "218ff7b1-13f2-11e8-85de-0a58ac1f1ce4"
+            },
+            "spec": {
+                "activeDeadlineSeconds": null,
+                "affinity": null,
+                "automountServiceAccountToken": null,
+                "containers": [
+                    {
+                        "args": null,
+                        "command": null,
+                        "env": null,
+                        "envFrom": null,
+                        "image": "venkateshsrini3/smtp.service:latest",
+                        "imagePullPolicy": "Always",
+                        "lifecycle": null,
+                        "livenessProbe": null,
+                        "name": "smtpservice",
+                        "ports": [
+                            {
+                                "containerPort": 80,
+                                "hostIP": null,
+                                "hostPort": null,
+                                "name": null,
+                                "protocol": "TCP"
+                            },
+                            {
+                                "containerPort": 25,
+                                "hostIP": null,
+                                "hostPort": null,
+                                "name": null,
+                                "protocol": "TCP"
+                            }
+                        ],
+                        "readinessProbe": null,
+                        "resources": {
+                            "limits": null,
+                            "requests": null
+                        },
+                        "securityContext": null,
+                        "stdin": null,
+                        "stdinOnce": null,
+                        "terminationMessagePath": "/dev/termination-log",
+                        "terminationMessagePolicy": "File",
+                        "tty": null,
+                        "volumeDevices": null,
+                        "volumeMounts": [
+                            {
+                                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                                "mountPropagation": null,
+                                "name": "default-token-9s5zd",
+                                "readOnly": true,
+                                "subPath": null
+                            }
+                        ],
+                        "workingDir": null
+                    }
+                ],
+                "dnsConfig": null,
+                "dnsPolicy": "ClusterFirst",
+                "hostAliases": null,
+                "hostIPC": null,
+                "hostNetwork": null,
+                "hostPID": null,
+                "hostname": null,
+                "imagePullSecrets": null,
+                "initContainers": null,
+                "nodeName": "aks-nodepool1-32852803-0",
+                "nodeSelector": null,
+                "priority": null,
+                "priorityClassName": null,
+                "restartPolicy": "Always",
+                "schedulerName": "default-scheduler",
+                "securityContext": {
+                    "fsGroup": null,
+                    "runAsNonRoot": null,
+                    "runAsUser": null,
+                    "seLinuxOptions": null,
+                    "supplementalGroups": null
+                },
+                "serviceAccount": "default",
+                "serviceAccountName": "default",
+                "subdomain": null,
+                "terminationGracePeriodSeconds": 30,
+                "tolerations": [
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.alpha.kubernetes.io/notReady",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300,
+                        "value": null
+                    },
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.alpha.kubernetes.io/unreachable",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300,
+                        "value": null
+                    }
+                ],
+                "volumes": [
+                    {
+                        "awsElasticBlockStore": null,
+                        "azureDisk": null,
+                        "azureFile": null,
+                        "cephfs": null,
+                        "cinder": null,
+                        "configMap": null,
+                        "downwardAPI": null,
+                        "emptyDir": null,
+                        "fc": null,
+                        "flexVolume": null,
+                        "flocker": null,
+                        "gcePersistentDisk": null,
+                        "gitRepo": null,
+                        "glusterfs": null,
+                        "hostPath": null,
+                        "iscsi": null,
+                        "name": "default-token-9s5zd",
+                        "nfs": null,
+                        "persistentVolumeClaim": null,
+                        "photonPersistentDisk": null,
+                        "portworxVolume": null,
+                        "projected": null,
+                        "quobyte": null,
+                        "rbd": null,
+                        "scaleIO": null,
+                        "secret": {
+                            "defaultMode": 420,
+                            "items": null,
+                            "optional": null,
+                            "secretName": "default-token-9s5zd"
+                        },
+                        "storageos": null,
+                        "vsphereVolume": null
+                    }
+                ]
+            },
+            "status": {
+                "conditions": [
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-17T14:52:10Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "Initialized"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-17T14:52:21Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "Ready"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-17T14:52:10Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "PodScheduled"
+                    }
+                ],
+                "containerStatuses": [
+                    {
+                        "containerID": "docker://18016cfb8c2d7f2a005f1b6f7b1d4a6a581392e181b5bb7467204490ceb8957f",
+                        "image": "venkateshsrini3/smtp.service:latest",
+                        "imageID": "docker-pullable://venkateshsrini3/smtp.service@sha256:6b67bbb358cc5c9feec30225e5296819df376252adeaedec1c0479a2fe01f25c",
+                        "lastState": {
+                            "running": null,
+                            "terminated": null,
+                            "waiting": null
+                        },
+                        "name": "smtpservice",
+                        "ready": true,
+                        "restartCount": 0,
+                        "state": {
+                            "running": {
+                                "startedAt": "2018-02-17T14:52:20Z"
+                            },
+                            "terminated": null,
+                            "waiting": null
+                        }
+                    }
+                ],
+                "hostIP": "10.240.0.4",
+                "initContainerStatuses": null,
+                "message": null,
+                "phase": "Running",
+                "podIP": "10.244.0.21",
+                "qosClass": "BestEffort",
+                "reason": null,
+                "startTime": "2018-02-17T14:52:10Z"
+            }
+        },
+        {
+            "apiVersion": null,
+            "kind": null,
+            "metadata": {
+                "annotations": {
+                    "kubernetes.io/created-by": "{\"kind\":\"SerializedReference\",\"apiVersion\":\"v1\",\"reference\":{\"kind\":\"ReplicaSet\",\"namespace\":\"default\",\"name\":\"win-func-c586fb54d\",\"uid\":\"9dada84d-13b1-11e8-85de-0a58ac1f1ce4\",\"apiVersion\":\"extensions\",\"resourceVersion\":\"5584\"}}\n",
+                    "prometheus.io.scrape": "false"
+                },
+                "clusterName": null,
+                "creationTimestamp": "2018-02-17T07:10:21Z",
+                "deletionGracePeriodSeconds": null,
+                "deletionTimestamp": null,
+                "finalizers": null,
+                "generateName": "win-func-c586fb54d-",
+                "generation": null,
+                "initializers": null,
+                "labels": {
+                    "faas_function": "win-func",
+                    "pod-template-hash": "714296108"
+                },
+                "name": "win-func-c586fb54d-f2xhw",
+                "namespace": "default",
+                "ownerReferences": [
+                    {
+                        "apiVersion": "extensions/v1beta1",
+                        "blockOwnerDeletion": true,
+                        "controller": true,
+                        "kind": "ReplicaSet",
+                        "name": "win-func-c586fb54d",
+                        "uid": "9dada84d-13b1-11e8-85de-0a58ac1f1ce4"
+                    }
+                ],
+                "resourceVersion": "1347991",
+                "selfLink": "/api/v1/namespaces/default/pods/win-func-c586fb54d-f2xhw",
+                "uid": "9db1ecdb-13b1-11e8-85de-0a58ac1f1ce4"
+            },
+            "spec": {
+                "activeDeadlineSeconds": null,
+                "affinity": null,
+                "automountServiceAccountToken": null,
+                "containers": [
+                    {
+                        "args": null,
+                        "command": null,
+                        "env": [
+                            {
+                                "name": "fprocess",
+                                "value": "dotnet ./root.dll",
+                                "valueFrom": null
+                            }
+                        ],
+                        "envFrom": null,
+                        "image": "venkateshsrini3/samplefaas",
+                        "imagePullPolicy": "Always",
+                        "lifecycle": null,
+                        "livenessProbe": {
+                            "exec": {
+                                "command": [
+                                    "cat",
+                                    "/tmp/.lock"
+                                ]
+                            },
+                            "failureThreshold": 3,
+                            "httpGet": null,
+                            "initialDelaySeconds": 3,
+                            "periodSeconds": 10,
+                            "successThreshold": 1,
+                            "tcpSocket": null,
+                            "timeoutSeconds": 1
+                        },
+                        "name": "win-func",
+                        "ports": [
+                            {
+                                "containerPort": 8080,
+                                "hostIP": null,
+                                "hostPort": null,
+                                "name": null,
+                                "protocol": "TCP"
+                            }
+                        ],
+                        "readinessProbe": {
+                            "exec": {
+                                "command": [
+                                    "cat",
+                                    "/tmp/.lock"
+                                ]
+                            },
+                            "failureThreshold": 3,
+                            "httpGet": null,
+                            "initialDelaySeconds": 3,
+                            "periodSeconds": 10,
+                            "successThreshold": 1,
+                            "tcpSocket": null,
+                            "timeoutSeconds": 1
+                        },
+                        "resources": {
+                            "limits": null,
+                            "requests": null
+                        },
+                        "securityContext": null,
+                        "stdin": null,
+                        "stdinOnce": null,
+                        "terminationMessagePath": "/dev/termination-log",
+                        "terminationMessagePolicy": "File",
+                        "tty": null,
+                        "volumeDevices": null,
+                        "volumeMounts": [
+                            {
+                                "mountPath": "/var/run/secrets/kubernetes.io/serviceaccount",
+                                "mountPropagation": null,
+                                "name": "default-token-9s5zd",
+                                "readOnly": true,
+                                "subPath": null
+                            }
+                        ],
+                        "workingDir": null
+                    }
+                ],
+                "dnsConfig": null,
+                "dnsPolicy": "ClusterFirst",
+                "hostAliases": null,
+                "hostIPC": null,
+                "hostNetwork": null,
+                "hostPID": null,
+                "hostname": null,
+                "imagePullSecrets": null,
+                "initContainers": null,
+                "nodeName": "aks-nodepool1-32852803-0",
+                "nodeSelector": null,
+                "priority": null,
+                "priorityClassName": null,
+                "restartPolicy": "Always",
+                "schedulerName": "default-scheduler",
+                "securityContext": {
+                    "fsGroup": null,
+                    "runAsNonRoot": null,
+                    "runAsUser": null,
+                    "seLinuxOptions": null,
+                    "supplementalGroups": null
+                },
+                "serviceAccount": "default",
+                "serviceAccountName": "default",
+                "subdomain": null,
+                "terminationGracePeriodSeconds": 30,
+                "tolerations": [
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.alpha.kubernetes.io/notReady",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300,
+                        "value": null
+                    },
+                    {
+                        "effect": "NoExecute",
+                        "key": "node.alpha.kubernetes.io/unreachable",
+                        "operator": "Exists",
+                        "tolerationSeconds": 300,
+                        "value": null
+                    }
+                ],
+                "volumes": [
+                    {
+                        "awsElasticBlockStore": null,
+                        "azureDisk": null,
+                        "azureFile": null,
+                        "cephfs": null,
+                        "cinder": null,
+                        "configMap": null,
+                        "downwardAPI": null,
+                        "emptyDir": null,
+                        "fc": null,
+                        "flexVolume": null,
+                        "flocker": null,
+                        "gcePersistentDisk": null,
+                        "gitRepo": null,
+                        "glusterfs": null,
+                        "hostPath": null,
+                        "iscsi": null,
+                        "name": "default-token-9s5zd",
+                        "nfs": null,
+                        "persistentVolumeClaim": null,
+                        "photonPersistentDisk": null,
+                        "portworxVolume": null,
+                        "projected": null,
+                        "quobyte": null,
+                        "rbd": null,
+                        "scaleIO": null,
+                        "secret": {
+                            "defaultMode": 420,
+                            "items": null,
+                            "optional": null,
+                            "secretName": "default-token-9s5zd"
+                        },
+                        "storageos": null,
+                        "vsphereVolume": null
+                    }
+                ]
+            },
+            "status": {
+                "conditions": [
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-17T07:10:21Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "Initialized"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-17T07:10:46Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "Ready"
+                    },
+                    {
+                        "lastProbeTime": null,
+                        "lastTransitionTime": "2018-02-17T07:10:21Z",
+                        "message": null,
+                        "reason": null,
+                        "status": "True",
+                        "type": "PodScheduled"
+                    }
+                ],
+                "containerStatuses": [
+                    {
+                        "containerID": "docker://88860a3307ad6a3e5702a6538f812d42addb53506db7234752dbb9d75c699562",
+                        "image": "venkateshsrini3/samplefaas:latest",
+                        "imageID": "docker-pullable://venkateshsrini3/samplefaas@sha256:4bd65104c98a34d7029096bbfa6c3a2d4931610c7d0cc48dca962387803b907b",
+                        "lastState": {
+                            "running": null,
+                            "terminated": null,
+                            "waiting": null
+                        },
+                        "name": "win-func",
+                        "ready": true,
+                        "restartCount": 0,
+                        "state": {
+                            "running": {
+                                "startedAt": "2018-02-17T07:10:42Z"
+                            },
+                            "terminated": null,
+                            "waiting": null
+                        }
+                    }
+                ],
+                "hostIP": "10.240.0.4",
+                "initContainerStatuses": null,
+                "message": null,
+                "phase": "Running",
+                "podIP": "10.244.0.20",
+                "qosClass": "BestEffort",
+                "reason": null,
+                "startTime": "2018-02-17T07:10:21Z"
+            }
+        }
+    ],
+    "kind": "PodList",
+    "metadata": {
+        "continue": null,
+        "resourceVersion": "3254241",
+        "selfLink": "/api/v1/namespaces/default/pods"
+    }
+}
