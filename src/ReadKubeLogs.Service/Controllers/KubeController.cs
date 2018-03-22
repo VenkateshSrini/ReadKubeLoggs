@@ -43,7 +43,10 @@ namespace ReadKubeLogs.Service.Controllers
         public  IActionResult GetServiceLog(string serviceName, string namespaceName)
         {
             V1Service services = kubeClient.ReadNamespacedService(serviceName, namespaceName);
-            var podList = kubeClient.ListNamespacedPod(namespaceName);
+            var serviceLabels = services.Metadata.Labels;
+            var pods = kubeClient.ListNamespacedPod(namespaceName);
+            //Iterare, take labels and check if service entry matches
+
             //podList.Items.Where(pd=>pd.Spec.NodeSelector.Where(keyval=>(keyval.Key== "io.kompose.service") &&("")))
             return Json(services);
         }
