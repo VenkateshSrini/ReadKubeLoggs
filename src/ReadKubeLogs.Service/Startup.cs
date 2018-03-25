@@ -11,6 +11,7 @@ using Microsoft.Extensions.Options;
 using System.IO;
 using k8s;
 using ReadKubeLogs.Service.config;
+using Swashbuckle.AspNetCore.Swagger;
 
 namespace ReadKubeLogs.Service
 {
@@ -28,6 +29,24 @@ namespace ReadKubeLogs.Service
         {
             services.AddMvc();
             InjectKubernetesClient(services);
+            services.AddSwaggerGen(c =>
+            {
+                c.SwaggerDoc("v3", new Info
+                {
+                    Version = "v3",
+                    Title = "Kubernetes Log API",
+                    Description = "An APi to read Kubernetes logs",
+                    TermsOfService = "None",
+                    Contact = new Contact { Name = "Venkatesh Srinivasan", Email = "venkatesh-5.srinivasan-5@cognizant.com", Url = "http://venkateshoncloud.wordpress.com/" }
+                    
+                });
+
+                // Set the comments path for the Swagger JSON and UI.
+                var basePath = AppContext.BaseDirectory;
+                var xmlPath = Path.Combine(basePath, "ReadKubeLogs.Service.xml");
+                c.IncludeXmlComments(xmlPath);
+            });
+
 
 
 
@@ -58,7 +77,17 @@ namespace ReadKubeLogs.Service
             }
 
             app.UseMvc();
-           
+            // Enable middleware to serve generated Swagger as a JSON endpoint.
+            app.UseSwagger();
+
+            // Enable middleware to serve swagger-ui (HTML, JS, CSS, etc.), specifying the Swagger JSON endpoint.
+            app.UseSwaggerUI(c =>
+            {
+                c.SwaggerEndpoint("/swagger/v3/swagger.json", "API to read Kuberenets Log V3");
+            });
+
+
+
         }
     }
 }

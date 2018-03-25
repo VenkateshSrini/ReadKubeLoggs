@@ -19,8 +19,13 @@ namespace ReadKubeLogs.Service.Controllers
             
             kubeClient = client;
         }
-
-        // GET api/values/5
+        /// <summary>
+        /// This API gets the log (Kubectl log) by taking the podName and namespace name
+        /// </summary>
+        /// <param name="podName">Kubenetes POD for which log has to be read</param>
+        /// <param name="namespaceName">Name of the Namespace in which the POD resides</param>
+        /// <returns>JSON containing the Kube Log</returns>
+        
         [HttpGet("{podName}/{namespaceName}")]
         public async Task<IActionResult> Get(string  podName, string namespaceName)
         {
@@ -39,6 +44,12 @@ namespace ReadKubeLogs.Service.Controllers
             }
             return Json(content);
         }
+        /// <summary>
+        /// This API gets the log (Kubectl log) by taking the Service name and namespace name
+        /// </summary>
+        /// <param name="serviceName">Name of the service for which log is needed</param>
+        /// <param name="namespaceName">Name space name of the service for which log s needed</param>
+        /// <returns>JSON array of logs from all PODS that runds beneath the service</returns>
         [HttpGet("ServiceLog/{serviceName}/{namespaceName}")]
         public  async Task<IActionResult> GetServiceLog(string serviceName, string namespaceName)
         {
